@@ -1,0 +1,173 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="7.3.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />  
+    <PackageReference Include="Xamarin.Forms.BackgroundVideoView" Version="0.0.0.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v12.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay.xaml.cs">
+      <DependentUpon>Kulay.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay23.xaml.cs">
+      <DependentUpon>Kulay23.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay24.xaml.cs">
+      <DependentUpon>Kulay24.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay27.xaml.cs">
+      <DependentUpon>Kulay27.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay22.xaml.cs">
+      <DependentUpon>Kulay22.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay21.xaml.cs">
+      <DependentUpon>Kulay21.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay20.xaml.cs">
+      <DependentUpon>Kulay20.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay19.xaml.cs">
+      <DependentUpon>Kulay19.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome10v2.xaml.cs">
+      <DependentUpon>KulayHome10v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome18.xaml.cs">
+      <DependentUpon>KulayHome18.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome17.xaml.cs">
+      <DependentUpon>KulayHome17.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome16.xaml.cs">
+      <DependentUpon>KulayHome16.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome15.xaml.cs">
+      <DependentUpon>KulayHome15.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome14.xaml.cs">
+      <DependentUpon>KulayHome14.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome13.xaml.cs">
+      <DependentUpon>KulayHome13.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome12.xaml.cs">
+      <DependentUpon>KulayHome12.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome11.xaml.cs">
+      <DependentUpon>KulayHome11.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome8v2.xaml.cs">
+      <DependentUpon>KulayHome8v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KulayHome9v2.xaml.cs">
+      <DependentUpon>KulayHome9v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number1v3.xaml.cs">
+      <DependentUpon>Number1v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number2v3.xaml.cs">
+      <DependentUpon>Number2v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number3v3.xaml.cs">
+      <DependentUpon>Number3v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number4v3.xaml.cs">
+      <DependentUpon>Number4v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number5v3.xaml.cs">
+      <DependentUpon>Number5v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number6v3.xaml.cs">
+      <DependentUpon>Number6v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number8v3.xaml.cs">
+      <DependentUpon>Number8v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number9v3.xaml.cs">
+      <DependentUpon>Number9v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number10v3.xaml.cs">
+      <DependentUpon>Number10v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number7v3.xaml.cs">
+      <DependentUpon>Number7v3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number1v2.xaml.cs">
+      <DependentUpon>Number1v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number2v2.xaml.cs">
+      <DependentUpon>Number2v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number4v2.xaml.cs">
+      <DependentUpon>Number4v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number3v2.xaml.cs">
+      <DependentUpon>Number3v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number6v2.xaml.cs">
+      <DependentUpon>Number6v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number5v2.xaml.cs">
+      <DependentUpon>Number5v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number7v2.xaml.cs">
+      <DependentUpon>Number7v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number8v2.xaml.cs">
+      <DependentUpon>Number8v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number9v2.xaml.cs">
+      <DependentUpon>Number9v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number10v2.xaml.cs">
+      <DependentUpon>Number10v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number10.xaml.cs">
+      <DependentUpon>Number10.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number9.xaml.cs">
+      <DependentUpon>Number9.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number8.xaml.cs">
+      <DependentUpon>Number8.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number7.xaml.cs">
+      <DependentUpon>Number7.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number6.xaml.cs">
+      <DependentUpon>Number6.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number5.xaml.cs">
+      <DependentUpon>Number5.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number4.xaml.cs">
+      <DependentUpon>Number4.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number3.xaml.cs">
+      <DependentUpon>Number3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Number2.xaml.cs">
+      <DependentUpon>Number2.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

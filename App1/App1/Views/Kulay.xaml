@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Xamarin.Forms.BackgroundVideoView;assembly=Xamarin.Forms.BackgroundVideoView"
+             mc:Ignorable="d"
+             x:Class="App1.Views.Kulay">
+
+
+        <controls:BackgroundVideoView Source="Luntianvid.mp4" Loop="True" HorizontalOptions="Fill" VerticalOptions="Fill" Opacity="1" >
+            <controls:BackgroundVideoView.ViewContent>
+            <Grid>
+           
+                <ImageButton Source="HomeLogoABC.png"
+                    Opacity="1" 
+                    AbsoluteLayout.LayoutBounds="200, 200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="200" 
+                    WidthRequest="100" 
+                    Clicked="Btn_Clicked"
+                    />
+            </Grid>
+        </controls:BackgroundVideoView.ViewContent>
+        </controls:BackgroundVideoView>
+
+
+
+    </ContentPage>  

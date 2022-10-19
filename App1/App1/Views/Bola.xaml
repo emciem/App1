@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Bola"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
+    <ContentPage.Content>
+        <Grid>
+            <ffimageloading:SvgCachedImage Source="2NDPAGEBv4.png" Aspect="Fill" />
+            <AbsoluteLayout>
+                <Image Source="Smallb.png" 
+         HeightRequest="95"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="400, 23">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="BigB.png" 
+         HeightRequest="110"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="200, 1">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+                <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="b"
+         Opacity="0"
+         HeightRequest="150"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="300, 190">
+                    <Label.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

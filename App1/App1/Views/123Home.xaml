@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views._123Home"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             BackgroundImage="BGnumbers.jpg"
+             Title="{Binding Title}">
+
+
+    <ContentPage.Content>
+        <!--ANNA-->
+        <Grid>
+         
+            <AbsoluteLayout>
+                <ImageButton Source="HomeLogoABC.png"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="200, 200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="200"
+                    WidthRequest="100" 
+                    Clicked="Btn_Clicked"
+                    />
+
+                <ImageButton 
+         Source="F2.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked2"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="160, 1">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+
+                <ImageButton 
+         Source="F4.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked4"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="490, 1">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+                <ImageButton 
+         Source="F1.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="10, 40">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+
+                <ImageButton 
+         Source="F3.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked3"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="300, 30">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+                <ImageButton 
+         Source="F5.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked5"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="650, 10">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+
+                <ImageButton 
+         Source="F6.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked6"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="40, 180">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+                <ImageButton 
+         Source="F7.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked7"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="200, 140">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+
+                <ImageButton
+         Source="F8.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked8"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="320, 160">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+                <ImageButton 
+         Source="F9.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked9"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="500, 130">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+
+                <ImageButton 
+         Source="F10.png"
+         HeightRequest="150"
+         WidthRequest="150"
+         Clicked="Btn_Clicked10"
+         BackgroundColor="Transparent"
+         AbsoluteLayout.LayoutBounds="650, 160">
+                    <ImageButton.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </ImageButton.GestureRecognizers>
+                </ImageButton>
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

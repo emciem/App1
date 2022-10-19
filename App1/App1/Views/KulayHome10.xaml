@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.KulayHome10"
+             xmlns:vm="clr-namespace:App1.ViewModels"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+
+             Title="{Binding Title}">
+
+
+    <StackLayout>
+        <Grid>
+            <ffimageloading:SvgCachedImage Source="BGCOLOR.png" Aspect="Fill" />
+
+            <AbsoluteLayout>
+                <Image Source="MANSANASBW.png" 
+         HeightRequest="300"
+         WidthRequest="500"
+         Opacity="0"
+         AbsoluteLayout.LayoutBounds="170, 1">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="LUNTIANPAINTBRUSH.png" 
+         HeightRequest="120"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="50, 10">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="DILAWPAINTBRUSH.png" 
+         HeightRequest="120"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="50, 200">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="BUGHAWPAINTBRUSH.png" 
+         HeightRequest="110"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="670, 200">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="PULABRUSH.png" 
+         HeightRequest="100"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="670, 60">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+                <Image Source="ROSASBW.png"
+         Opacity="10"
+         HeightRequest="300"
+         WidthRequest="500"
+         AbsoluteLayout.LayoutBounds="170, 1" >
+                    <Image.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </AbsoluteLayout>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>  

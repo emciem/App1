@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3B68D31-62B3-4C19-931C-2EF7FF9DDE43}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>App1.Droid</RootNamespace>
+    <AssemblyName>App1.Android</AssemblyName>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms.BackgroundVideoView">
+      <Version>0.0.0.22</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\icon_about.png" />
+    <AndroidResource Include="Resources\drawable\icon_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App1\App1.csproj">
+      <Project>{201A12E1-9265-4BF5-804C-5A09504D7EE8}</Project>
+      <Name>App1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NewBackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\playbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\playbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Homev1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\HomeLogoABC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BackGroundPlayBtn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A2bckgrnd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A3BckRound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Agif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NewBackGround.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NewBG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Aso.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Atis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Bola.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Dahon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Elesi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Gatas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Gitara.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Hari.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Ibon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Kahon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Langgam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Manga.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Niyog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Orasan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Pusa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Rosas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Saging.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Timba.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Ubas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Walis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Yelo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BGnumbers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NewHomeBG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Raw\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\AA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SmallA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Smallb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Smalld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Smalle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Smallg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LUNTIANPAINTBRUSH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BGCOLOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BIBEBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BUGHAWPAINTBRUSH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\DILAWPAINTBRUSH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\DUCKY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\K56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\F9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MusicBG.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MusicBG.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\10.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\isa.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\6.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\7.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\8.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\9.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BGMusicv2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\A.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\A-ASO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AGILA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AHAS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ANNA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ARAW.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ASSO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ATIS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BABOY.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BASOO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BIBE.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BOLA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BOTTA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BUH.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DAGA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DAHON.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DAMO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DINO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DOKTOR.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DUH.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\E.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ELENA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ELEPANTE.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ELESI.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ESPADA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\EUH.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HAGDAN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HALAMAN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANNAH.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HARI.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HOLEN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\IBON.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAU NATIN ANG LETRANG NA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG A SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG BA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG DA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG E SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG HA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG KA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG LA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG MA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG NGA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG O SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG PA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG RA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG SA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG TA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG U SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG WA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG LETRANG YA SA BASKET.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG MALAKING LETRANG A AT MALIIT NA LETRANG A.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG MALAKING LETRANG BA AT MALIIT NA LETRANG.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG MALAKING LETRANG E AT MALIIT NA LETRANG E.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG MALAKING LETRANG KA AT MALIIT NA LETRANG KA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG MALAKING LETRANG MA AT MALIIT NA LETRANG.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAGAY NATIN ANG MALIIT NA LETRANG DA AT MALAKING LETRANG DA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ILAW.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ISABEL.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ISDA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ITLOG.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KAHON.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KAHOY.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KAHOYY.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KANDILA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KARENN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KENDI.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KOTSE.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KUH.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LABI.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LAMESA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LANDO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LANGGAM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LAPIS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LASO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LOBO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MAIS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MALAKING LETRANG A.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MALIIT NA LETRANG A.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MANGGA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MANOK.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MANSANAS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MARTIN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MATA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NARS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NGANGA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NGIPIN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NGITI.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NGUSO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NIPA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NIYOG.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\NOO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\OKRA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ORASAN.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\OSO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\OSTSA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PAKO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PAYONG.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Penny magandang araw.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PUNO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PUSA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\RADYO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ROBOT.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ROSAS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\RULER.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SAGING.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SUMBRERO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SUNDALO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SUSI.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\TALONG.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\TENGA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\TIMBA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\TINAPAY.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UBAS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ULAP.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ULING.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UOD.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\WALIS.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\WALO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\WATAWAT.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\WEYTER.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\YATE.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\YELO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\YERO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\YOYO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Unlock Notif.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Complete.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Lose.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\poup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Quick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Lose.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Complete.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Smallh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Smalli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Ka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Kk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\kkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SmallM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BigM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BANANAY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SUNY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ARAWBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SAGINGBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LASO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LASOBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MANSANAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MANSANASBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PAINTBOARD.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PULA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PULA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PULA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PulaBrush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ROSAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ROSASBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NewBGHOME.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SAMPULECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SIYAMLECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TATLOLECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WALOLECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ANIMLECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\APATLECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\DALAWALECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ISALECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LIMALECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PITOLECTURE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ROSASv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ACTLUNTIAN2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LESSONLUNTIAN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LESSONLUNTIAN1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LESSONLUNTIAN2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PRACTICELUNTIAN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PRACTICELUNTIAN1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PRACTICELUNTIAN2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PRACTICELUNTIAN3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ACTLUNTIAN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ACTLUNTIAN1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Luntianvid.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Luntianvid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\apat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\dalawa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lima.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tatlo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\p10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\anim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pito.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sampu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\siyam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\walo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

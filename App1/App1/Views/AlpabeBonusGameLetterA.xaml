@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="App1.Views.AlpabeBonusGameLetterA"
+             BackgroundImage="A3BckRound.jpg">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="10">
+            <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="A"
+         TextColor="Red"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="80, 62">
+                <Label.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="a"
+         TextColor="Red"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="500, 120">
+                <Label.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="A"
+         TextColor="Gray"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="310, 200">
+                <Label.GestureRecognizers>
+                    <DropGestureRecognizer Drop="OnDrop" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="a"
+         TextColor="Gray"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="370, 200">
+                <Label.GestureRecognizers>
+                    <DropGestureRecognizer Drop="OnDrop" />
+                </Label.GestureRecognizers>
+            </Label>
+            <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->
+            <!--<ffimageloading:SvgCachedImage HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Source="NewBG.gif" HeightRequest="100" WidthRequest="100" />-->
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

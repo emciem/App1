@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Alpabet1"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             >
+
+    <StackLayout>
+        <Grid>
+            <ffimageloading:SvgCachedImage Source="2NDPAGEv2.png" Aspect="Fill" />
+            <AbsoluteLayout>
+                <Image Source="SmallA.png" 
+         HeightRequest="80"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="470, 40">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="AA.png" 
+         HeightRequest="105"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutBounds="220, 15">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+                <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="a"
+         Opacity="0"
+         HeightRequest="150"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="400, 180">
+                    <Label.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </AbsoluteLayout>
+        </Grid>
+    </StackLayout>
+
+
+
+   
+</ContentPage>

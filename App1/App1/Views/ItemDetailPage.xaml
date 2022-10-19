@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ItemDetailPage"
+             BackgroundImage="Homev1.jpg"
+             Title="{Binding Title}">
+
+    <AbsoluteLayout Margin="50">
+
+        <ImageButton Source="HomeLogoABC.png"
+                    AbsoluteLayout.LayoutBounds="330,20"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    HeightRequest="65"
+                    WidthRequest="100"
+                    Clicked="Btn_Clicked"
+                    />
+        <ImageButton Source="HomeLogoABC.png"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="555,20"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    HeightRequest="65"
+                    WidthRequest="100"
+                    Clicked="Btn123_Clicked"
+                    />
+        <ImageButton Source="HomeLogoABC.png"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="330,110"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    HeightRequest="65"
+                    WidthRequest="100"
+                    Clicked="BtnKulay_Clicked"
+                    />
+        <ImageButton Source="HomeLogoABC.png"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="530,110"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    HeightRequest="65"
+                    WidthRequest="100"
+                    Clicked="BtnHugis_Clicked"
+                    />
+    </AbsoluteLayout>
+
+
+
+</ContentPage>
