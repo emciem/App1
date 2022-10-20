@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="App1.Views.AlpabeBonusGameLetterB"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="10">
+            <Image 
+         Source="B41.png"
+         HeightRequest="120"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="1, 1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B43.png"
+         HeightRequest="120"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="210, 1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B44.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="400, 1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B45.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="600, 1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B46.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="200, 150">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B47.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="450, 150">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B48.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="600, 150">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+         Source="B49.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="20, 150">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+
+            <Image 
+                Source="B42.png"
+         HeightRequest="100"
+         WidthRequest="200"
+         AbsoluteLayout.LayoutBounds="320, 200">
+                <Image.GestureRecognizers>
+                    <DropGestureRecognizer Drop="OnDrop" />
+                </Image.GestureRecognizers>
+            </Image>
+            <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->
+            <!--<ffimageloading:SvgCachedImage HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Source="NewBG.gif" HeightRequest="100" WidthRequest="100" />-->
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

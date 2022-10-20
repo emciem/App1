@@ -7,6 +7,7 @@ using AudioPlayEx;
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
+using Xamarin.Forms.BackgroundVideoView;
 using Xamarin.Forms.Xaml;
 
 
@@ -20,11 +21,13 @@ namespace App1.Views
         {
             InitializeComponent();
             //DependencyService.Get<IAudio>().PlayAudioFile("MusicBG.mp3");
+           
+
         }
 
         private async void Btn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ItemDetailPage());
+            await Navigation.PushAsync(new ItemDetailPage(),false);
 
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
 

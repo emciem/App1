@@ -40,23 +40,23 @@ namespace App1.Views
         private async void Btn_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
-            await Navigation.PushAsync(new Alpabet1());
+            await Navigation.PushAsync(new Alpabet1(), false);
         }
 
         private async void Btn123_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
-            await Navigation.PushAsync(new _123Home());
+            await Navigation.PushAsync(new _123Home(), false);
         }
         private async void BtnKulay_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
-            await Navigation.PushAsync(new KulayHome1());
+            await Navigation.PushAsync(new KulayHome1(), false);
         }
         private async void BtnHugis_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
-            await Navigation.PushAsync(new Kulay());
+            await Navigation.PushAsync(new Kulay(), false);
         }
     }
 

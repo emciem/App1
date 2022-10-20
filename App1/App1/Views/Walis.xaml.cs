@@ -24,14 +24,14 @@ namespace App1.Views
             if (e.Data.ToString() != "A")
             {
                 await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Yelo());
+                await Navigation.PushAsync(new Yelo(), false);
             }
             else
             {
 
                 DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
                 await DisplayAlert("Sorry", "Try Again", "OK");
-                await Navigation.PushAsync(new Yelo());
+               
             }
         }
     }

@@ -20,7 +20,7 @@ namespace App1.Views
         private async void Btn_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IAudio>().PlayAudioFile("3.mp3");
-            await Navigation.PushAsync(new Number3v2());
+            await Navigation.PushAsync(new Number3v2(), false);
 
         }
     }

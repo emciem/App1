@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.ItemDetailPage"
              BackgroundImage="Homev1.jpg"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             Shell.NavBarIsVisible="False">
 
     <AbsoluteLayout Margin="50">
 
         <ImageButton Source="HomeLogoABC.png"
-                    AbsoluteLayout.LayoutBounds="330,20"
+                    AbsoluteLayout.LayoutBounds="300,40"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     HeightRequest="65"

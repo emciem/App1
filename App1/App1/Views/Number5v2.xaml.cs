@@ -21,7 +21,7 @@ namespace App1.Views
         private async void Btn_Clicked(object sender, EventArgs e)
         {
            
-            await Navigation.PushAsync(new Number5v3());
+            await Navigation.PushAsync(new Number5v3(), false);
 
         }
 

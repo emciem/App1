@@ -5,9 +5,9 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
     <ContentPage.Content>
         <Grid>
-            <ffimageloading:SvgCachedImage Source="2NDPAGEBv4.png" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="bola1.png" Aspect="Fill" />
             <AbsoluteLayout>
-                <Image Source="Smallb.png" 
+                <!--<Image Source="Smallb.png" 
          HeightRequest="95"
          WidthRequest="170"
          AbsoluteLayout.LayoutBounds="400, 23">
@@ -35,7 +35,7 @@
                     <Label.GestureRecognizers>
                         <DropGestureRecognizer Drop="OnDrop" />
                     </Label.GestureRecognizers>
-                </Label>
+                </Label>-->
 
             </AbsoluteLayout>
         </Grid>

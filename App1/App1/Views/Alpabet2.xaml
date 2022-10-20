@@ -7,13 +7,13 @@
 
 
     <StackLayout>
-        <Grid>
-            <ffimageloading:SvgCachedImage Source="3RDPAGEv2.png" Aspect="Fill" />
+        <Grid >
+            <ffimageloading:SvgCachedImage Source="Aso2.png" Aspect="Fill" Margin="3,10,120,1" />
             <AbsoluteLayout>
                 <Image Source="SmallA.png" 
          HeightRequest="80"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="650, 220">
+         AbsoluteLayout.LayoutBounds="670, 200">
                     <Image.GestureRecognizers>
                         <DragGestureRecognizer />
                     </Image.GestureRecognizers>
@@ -21,7 +21,7 @@
                 <Image Source="AA.png" 
          HeightRequest="80"
          WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="650, 70">
+         AbsoluteLayout.LayoutBounds="670, 30">
                     <Image.GestureRecognizers>
                         <DragGestureRecognizer />
                     </Image.GestureRecognizers>
@@ -34,7 +34,18 @@
          Opacity="0"
          HeightRequest="150"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="300, 190">
+         AbsoluteLayout.LayoutBounds="180, 10">
+                    <Label.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="a"
+         Opacity="0"
+         HeightRequest="150"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="400, 10">
                     <Label.GestureRecognizers>
                         <DropGestureRecognizer Drop="OnDrop" />
                     </Label.GestureRecognizers>

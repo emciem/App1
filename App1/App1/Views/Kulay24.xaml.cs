@@ -19,7 +19,7 @@ namespace App1.Views
 
         private async void OnDrop(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Kulay24());
+            await Navigation.PushAsync(new Kulay24(), false);
             DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
         }
 

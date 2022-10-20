@@ -61,7 +61,7 @@ namespace App1.Views
         {
 
                 await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new KulayHome9());
+                await Navigation.PushAsync(new KulayHome9(), false);
 
         }
 

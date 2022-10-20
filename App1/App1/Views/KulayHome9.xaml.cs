@@ -22,14 +22,14 @@ namespace App1.Views
         {
 
             DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-            await Navigation.PushAsync(new KulayHome9v2());
+            await Navigation.PushAsync(new KulayHome9v2(), false);
 
         }
         async void OnDrop(object sender, DropEventArgs e)
         {
 
             await DisplayAlert("Correct", "Congratulations!", "OK");
-            await Navigation.PushAsync(new KulayHome9v2());
+            await Navigation.PushAsync(new KulayHome9v2(), false);
 
         }
 

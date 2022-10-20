@@ -60,7 +60,7 @@ namespace App1.Views
         async void OnDrop(object sender, DropEventArgs e)
         {
                 await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new KulayHome8v2());
+                await Navigation.PushAsync(new KulayHome8v2(), false);
            
         }
 

@@ -19,7 +19,7 @@ namespace App1.Views
 
         private async void Btn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new KulayHome13());
+            await Navigation.PushAsync(new KulayHome13(), false);
 
             DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
         }

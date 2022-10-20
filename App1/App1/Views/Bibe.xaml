@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <!--ANNA-->
         <Grid>
-            <ffimageloading:SvgCachedImage Source="3RDPAGEBv2.png" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="Bola3.png" Aspect="Fill"  Margin="3,10,120,1" />
             <AbsoluteLayout>
                 <Image Source="BigB.png" 
          HeightRequest="95"
@@ -33,6 +33,18 @@
          HeightRequest="150"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="300, 190">
+                    <Label.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="b"
+         Opacity="0"
+         HeightRequest="150"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="300, 50">
                     <Label.GestureRecognizers>
                         <DropGestureRecognizer Drop="OnDrop" />
                     </Label.GestureRecognizers>

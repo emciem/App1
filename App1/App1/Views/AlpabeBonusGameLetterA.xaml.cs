@@ -22,12 +22,12 @@ namespace App1.Views
             if (e.Data.ToString() != "A")
             {
                 await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Bola());
+                await Navigation.PushAsync(new AlpabeBonusGameLetterAv2(), false);
             }
             else
             {
                 await DisplayAlert("Sorry", "Try Again", "OK");
-                await Navigation.PushAsync(new Bola());
+               
             }
         }
     }

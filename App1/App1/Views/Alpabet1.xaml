@@ -7,9 +7,10 @@
 
     <StackLayout>
         <Grid>
-            <ffimageloading:SvgCachedImage Source="2NDPAGEv2.png" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="Aso1.png" Aspect="Fill" />
             <AbsoluteLayout>
                 <Image Source="SmallA.png" 
+                       Opacity="0"
          HeightRequest="80"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="470, 40">
@@ -18,6 +19,7 @@
                     </Image.GestureRecognizers>
                 </Image>
                 <Image Source="AA.png" 
+         Opacity="0"
          HeightRequest="105"
          WidthRequest="170"
          AbsoluteLayout.LayoutBounds="220, 15">
@@ -28,12 +30,14 @@
 
 
                 <Label FontSize="Header"
+                       Opacity="0"
          HorizontalTextAlignment="Center"
-         Text="a"
-         Opacity="0"
+         x:Name="labelAnimated"
+         Text="hiuyuiuihuihuih"
+         TextColor="Red"
          HeightRequest="150"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="400, 180">
+         AbsoluteLayout.LayoutBounds="220, 180">
                     <Label.GestureRecognizers>
                         <DropGestureRecognizer Drop="OnDrop" />
                     </Label.GestureRecognizers>

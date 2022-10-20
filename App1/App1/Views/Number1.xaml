@@ -4,6 +4,7 @@
              x:Class="App1.Views.Number1"
              xmlns:vm="clr-namespace:App1.ViewModels"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             Shell.PresentationMode="Animated"
              Title="{Binding Title}">
 
     <StackLayout>

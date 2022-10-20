@@ -25,6 +25,18 @@
     <Compile Update="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterB.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterB.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterBv2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterBv2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterAv2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterAv2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Bolav2.xaml.cs">
+      <DependentUpon>Bolav2.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Kulay.xaml.cs">
       <DependentUpon>Kulay.xaml</DependentUpon>
     </Compile>

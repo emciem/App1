@@ -21,12 +21,12 @@ namespace App1.Views
             if (e.Data.ToString() != "A")
             {
                 await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Gunting());
+                await Navigation.PushAsync(new Gunting(), false);
             }
             else
             {
                 await DisplayAlert("Sorry", "Try Again", "OK");
-                await Navigation.PushAsync(new Gunting());
+              
             }
         }
     }

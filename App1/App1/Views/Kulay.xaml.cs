@@ -27,7 +27,7 @@ namespace App1.Views
         private async void Btn_Clicked(object sender, EventArgs e)
         {
             
-            await Navigation.PushAsync(new ItemDetailPage());
+            await Navigation.PushAsync(new ItemDetailPage(), false);
 
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
 

@@ -29,7 +29,7 @@ namespace App1.ViewModels
 
             try
             {
-                await Shell.Current.GoToAsync($"//{nameof(ItemDetailPage)}");
+                await Shell.Current.GoToAsync($"//{nameof(Number1)}");
             }
             catch
             {
