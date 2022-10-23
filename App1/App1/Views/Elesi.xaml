@@ -6,38 +6,9 @@
     <ContentPage.Content>
         <!--ANNA-->
         <Grid>
-            <ffimageloading:SvgCachedImage Source="2NDPAGEEv4.jpg" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="Elesi1.png" Aspect="Fill" />
             <AbsoluteLayout>
-                <Image Source="Smalle.png" 
-         HeightRequest="113"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="400, 1">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="BigE.png" 
-         HeightRequest="110"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="200, 5">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-
-
-                <Label FontSize="Header"
-         HorizontalTextAlignment="Center"
-         Text="e"
-         Opacity="0"
-         HeightRequest="150"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="400, 160">
-                    <Label.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Label.GestureRecognizers>
-                </Label>
-
+            
             </AbsoluteLayout>
         </Grid>
     </ContentPage.Content>

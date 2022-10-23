@@ -13,28 +13,13 @@ namespace App1.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Mannga : ContentPage
 	{
-		public Mannga ()
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Mannga2(), false); }
+        public Mannga ()
 		{
 			InitializeComponent ();
 
             DependencyService.Get<IAudio>().PlayAudioFile("MANGGA.m4a");
         }
-        async void OnDrop(object sender, DropEventArgs e)
-        {
-            if (e.Data.ToString() != "A")
-            {
-
-                DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Niyog(), false);
-            }
-            else
-            {
-
-                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
-                await DisplayAlert("Sorry", "Try Again", "OK");
-                
-            }
-        }
+       
     }
 }

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Niyog2"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
+    <ContentPage.Content>
+        <!--ANNA-->
+        <Grid>
+            <ffimageloading:SvgCachedImage Source="Niyog2.png" Aspect="Fill" Margin="3,10,120,1" />
+            <AbsoluteLayout>
+                <Image Source="BigN.png"
+         HeightRequest="150"
+         WidthRequest="100"
+         AbsoluteLayout.LayoutBounds="700, 1">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="SmallN.png"
+         HeightRequest="150"
+         WidthRequest="100"
+         AbsoluteLayout.LayoutBounds="700, 180">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+                <Label FontSize="Header"
+         AbsoluteLayout.LayoutBounds="450, 10"
+         HorizontalTextAlignment="Center"
+         Text="iyog"
+         Opacity="0"
+         HeightRequest="150"
+         WidthRequest="300"
+         >
+                    <Label.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label FontSize="Header"
+         HorizontalTextAlignment="Center"
+         Text="N"
+         TextColor="Transparent"
+         HeightRequest="300"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="400, 10">
+                    <Label.GestureRecognizers>
+                        <DropGestureRecognizer Drop="OnDrop" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

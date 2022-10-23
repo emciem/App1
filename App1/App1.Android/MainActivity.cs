@@ -6,6 +6,7 @@ using Android.OS;
 using FFImageLoading.Forms.Platform;
 using FFImageLoading.Svg.Forms;
 using Forms.BackgroundVideo.AndroidCore;
+using Xamarin.Forms.BackgroundVideoView;
 
 namespace App1.Droid
 {

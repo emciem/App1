@@ -17,7 +17,7 @@
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand" 
                     HeightRequest="200" 
-                    WidthRequest="100" 
+                    WidthRequest="100"
                     Clicked="Btn_Clicked"
                     />
         </Grid>

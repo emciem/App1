@@ -13,28 +13,14 @@ namespace App1.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Ibon : ContentPage
 	{
-		public Ibon ()
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Ibon2(), false); }
+        public Ibon ()
 		{
+
 			InitializeComponent ();
 
             DependencyService.Get<IAudio>().PlayAudioFile("IBON.m4a");
         }
-        async void OnDrop(object sender, DropEventArgs e)
-        {
-            if (e.Data.ToString() != "A")
-            {
-
-                DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Kahon(), false);
-            }
-            else
-            {
-
-                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
-                await DisplayAlert("Sorry", "Try Again", "OK");
-                
-            }
-        }
+       
     }
 }

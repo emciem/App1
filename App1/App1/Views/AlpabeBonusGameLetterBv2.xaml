@@ -6,78 +6,86 @@
              BackgroundColor="White">
     <ContentPage.Content>
         <AbsoluteLayout Margin="10">
-            <Image 
-         Source="A41.png"
+            <ImageButton 
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="B11.png"
          HeightRequest="120"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="1, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B2.png"
          HeightRequest="120"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="210, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B3.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="400, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B6.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="600, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B7.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="200, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B8.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="450, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B9.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="600, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+               
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
          Source="B10.png"
          HeightRequest="100"
          WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="340, 150">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="IMG4B.png"
+         HeightRequest="100"
+         WidthRequest="150"
          AbsoluteLayout.LayoutBounds="20, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
+                
+            </ImageButton>
 
 
 

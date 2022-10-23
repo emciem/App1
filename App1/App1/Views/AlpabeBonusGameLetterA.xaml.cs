@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AudioPlayEx;
+using FakeItEasy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +17,9 @@ namespace App1.Views
 		public AlpabeBonusGameLetterA ()
 		{
 			InitializeComponent ();
-		}
-
+            DependencyService.Get<IAudio>().PlayAudioFile("ILAGAY NATIN ANG LETRANG A SA BASKET.m4a");
+        }
+        
         async void OnDrop(object sender, DropEventArgs e)
         {
             if (e.Data.ToString() != "A")

@@ -57,7 +57,7 @@ namespace App1
             DependencyService.Register<Niyog>();
             DependencyService.Register<Number1>();
             DependencyService.Register<Number10>();
-            DependencyService.Register<Number2>();
+           
             DependencyService.Register<Number3>();
             DependencyService.Register<Number4>();
             DependencyService.Register<Number5>();

@@ -6,54 +6,9 @@
     <ContentPage.Content>
         <!--ANNA-->
         <Grid>
-            <ffimageloading:SvgCachedImage Source="2ndPageK.png" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="Kahon1.png" Aspect="Fill" />
             <AbsoluteLayout>
-                <Image Source="Kk.png"
-         HeightRequest="85"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="200, 25">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-
-                <Label FontSize="Header"
-         HorizontalTextAlignment="Center"
- 
-         TextColor="Red"
-         HeightRequest="150"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="500, 180">
-                    <Label.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Label.GestureRecognizers>
-                </Label>
-
-
-
-                <Label FontSize="Header"
-         AbsoluteLayout.LayoutBounds="500, 10"
-         HorizontalTextAlignment="Center"
-         TextColor="White"
-         HeightRequest="150"
-         WidthRequest="250"
-         >
-                    <Label.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Label.GestureRecognizers>
-                </Label>
-
-                <Label FontSize="Header"
-         HorizontalTextAlignment="Center"
-         TextColor="White"
-         HeightRequest="150"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="400, 10">
-                    <Label.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Label.GestureRecognizers>
-                </Label>
-
+                
             </AbsoluteLayout>
         </Grid>
     </ContentPage.Content>

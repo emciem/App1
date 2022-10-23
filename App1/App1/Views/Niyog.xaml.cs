@@ -13,7 +13,8 @@ namespace App1.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Niyog : ContentPage
 	{
-		public Niyog ()
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Niyog2(), false); }
+        public Niyog ()
 		{
 			InitializeComponent ();
 

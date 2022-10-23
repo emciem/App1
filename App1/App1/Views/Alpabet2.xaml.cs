@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Android.Media;
+using AudioPlayEx;
+using FakeItEasy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +14,11 @@ namespace App1.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Alpabet2 : ContentPage
-	{
-		public Alpabet2 ()
+    {
+        public Alpabet2 ()
 		{
-			InitializeComponent ();
+            DependencyService.Get<IAudio>().PlayAudioFile("ILAGAY NATIN ANG MALAKING LETRANG A AT MALIIT NA LETRANG A.m4a");
+            InitializeComponent ();
 		}
         async void OnDrop(object sender, DropEventArgs e)
         {

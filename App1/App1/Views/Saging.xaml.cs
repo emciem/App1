@@ -13,28 +13,13 @@ namespace App1.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Saging : ContentPage
 	{
-		public Saging ()
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Saging2(), false); }
+        public Saging ()
 		{
 			InitializeComponent ();
 
             DependencyService.Get<IAudio>().PlayAudioFile("SAGING.m4a");
         }
-        async void OnDrop(object sender, DropEventArgs e)
-        {
-            if (e.Data.ToString() != "A")
-            {
-
-                DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Timba(), false);
-            }
-            else
-            {
-
-                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
-                await DisplayAlert("Sorry", "Try Again", "OK");
-                
-            }
-        }
+       
     }
 }

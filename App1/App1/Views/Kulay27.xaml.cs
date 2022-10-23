@@ -2,6 +2,7 @@
 using AudioPlayEx;
 using System;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,20 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace App1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class kulay25 : ContentPage
+    public partial class kulay27 : ContentPage
     {
-      
-        public kulay25()
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(1000); await this.Navigation.PushAsync(new kulay28(), false); }
+        public kulay27()
         {
             InitializeComponent();
         }
 
-        private async void OnDrop(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new kulay25(), false);
-            DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-        }
-
+      
 
 
     }

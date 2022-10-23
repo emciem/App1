@@ -2,6 +2,7 @@
 using AudioPlayEx;
 using System;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,37 +13,7 @@ namespace App1.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class KulayHome8v2 : ContentPage
     {
-        //private bool _isStopVisible;
-
-        //public bool IsStopVisible
-        //{
-        //    get
-        //    {
-        //        return _isStopVisible;
-        //    }
-        //    set
-        //    {
-        //        _isStopVisible = value;
-        //        OnPropertyChanged("IsStopVisible");
-        //    }
-
-        //}
-
-        //private bool _isCorrect;
-
-        //public bool IsCorrect
-        //{
-        //    get
-        //    {
-        //        return _isCorrect;
-        //    }
-        //    set
-        //    {
-        //        _isCorrect = value;
-        //        OnPropertyChanged("IsCorrect");
-        //    }
-
-        //}
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(1000); await this.Navigation.PushAsync(new KulayHome9(), false); }
 
         public KulayHome8v2()
         {

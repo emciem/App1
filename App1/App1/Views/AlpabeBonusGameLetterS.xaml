@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="App1.Views.AlpabeBonusGameLetterS"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="10">
+            <ImageButton 
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S41.png"
+         HeightRequest="120"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="1, 1">
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S42.png"
+         HeightRequest="120"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="210, 1">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S43.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="400, 1">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S44.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="600, 1">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S45.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="200, 150">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S46.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="450, 150">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S47.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="600, 150">
+               
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S48.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="340, 150">
+                
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="S49.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="20, 150">
+                
+            </ImageButton>
+
+
+
+            <!--<Image 
+                Source="B5.png"
+         HeightRequest="100"
+         WidthRequest="200"
+         AbsoluteLayout.LayoutBounds="320, 200">
+                <Image.GestureRecognizers>
+                    <DropGestureRecognizer Drop="OnDrop" />
+                </Image.GestureRecognizers>
+            </Image>-->
+            <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->
+            <!--<ffimageloading:SvgCachedImage HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Source="NewBG.gif" HeightRequest="100" WidthRequest="100" />-->
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

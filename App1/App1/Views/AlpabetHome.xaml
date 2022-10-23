@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d" 
+             x:Class="App1.Views.AlpabetHome">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100">
+        <!--<CarouselView x:Name="TheCarousel">
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Binding}">
+                    <Button ImageSource="BigA.png"></Button>
+                    <Button ImageSource="BigB.png"></Button>
+                    <Button ImageSource="BigK.png"></Button>
+                    <Button ImageSource="BigD.png"></Button>
+                    <Button ImageSource="BigE.png"></Button>
+                </x:Array>
+            </CarouselView.ItemsSource>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Button ImageSource="BigA.png"></Button>
+                        <Button ImageSource="BigB.png"></Button>
+                        <Button ImageSource="BigK.png"></Button>
+                        <Button ImageSource="BigD.png"></Button>
+                        <Button ImageSource="BigE.png"></Button>
+
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView 
+          IndicatorColor="LightGray"
+          SelectedIndicatorColor="Black"
+          IndicatorSize="10" HorizontalOptions="Center"
+          />-->
+    </StackLayout>
+</ContentPage>

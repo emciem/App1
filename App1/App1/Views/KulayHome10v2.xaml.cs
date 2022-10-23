@@ -2,6 +2,7 @@
 using AudioPlayEx;
 using System;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,8 @@ namespace App1.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class KulayHome10v2 : ContentPage
     {
-      
+
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(1000); await this.Navigation.PushAsync(new KulayHome11(), false); }
         public KulayHome10v2()
         {
             InitializeComponent();
@@ -26,8 +28,9 @@ namespace App1.Views
 
         async void OnDrop(object sender, DropEventArgs e)
         {
+
             await DisplayAlert("Correct", "Congratulations!", "OK");
-         
+            await Navigation.PushAsync(new KulayHome11(), false);
 
         }
 

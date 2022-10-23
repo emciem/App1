@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Alpabet2"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
              >
 
 
@@ -10,6 +11,7 @@
         <Grid >
             <ffimageloading:SvgCachedImage Source="Aso2.png" Aspect="Fill" Margin="3,10,120,1" />
             <AbsoluteLayout>
+
                 <Image Source="SmallA.png" 
          HeightRequest="80"
          WidthRequest="150"

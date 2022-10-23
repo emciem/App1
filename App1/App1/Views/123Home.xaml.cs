@@ -23,11 +23,11 @@ namespace App1.Views
 			await Navigation.PushAsync(new Number1(), false);
 			DependencyService.Get<IAudio>().PlayAudioFile("isa.mp3");
 		}
-		private async void Btn_Clicked2(object sender, EventArgs e)
-		{
-			await Navigation.PushAsync(new Number2(), false);
-			DependencyService.Get<IAudio>().PlayAudioFile("2.mp3");
-		}
+		//private async void Btn_Clicked2(object sender, EventArgs e)
+		//{
+		//	await Navigation.PushAsync(new Number2(), false);
+		//	DependencyService.Get<IAudio>().PlayAudioFile("2.mp3");
+		//}
 		private async void Btn_Clicked3(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new Number3(), false);

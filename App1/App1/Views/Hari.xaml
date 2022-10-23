@@ -6,38 +6,9 @@
     <ContentPage.Content>
         <!--ANNA-->
         <Grid>
-            <ffimageloading:SvgCachedImage Source="3rdPageH.jpg" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="Holen1.png" Aspect="Fill" />
             <AbsoluteLayout>
-                <Image Source="SmallH.png" 
-         HeightRequest="113"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="610, 180">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="BigH.png" 
-         HeightRequest="110"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="610, 10">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-
-
-                <Label FontSize="Header"
-         HorizontalTextAlignment="Center"
-         Text="e"
-         Opacity="0"
-         HeightRequest="150"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="400, 160">
-                    <Label.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Label.GestureRecognizers>
-                </Label>
-
+          
             </AbsoluteLayout>
         </Grid>
     </ContentPage.Content>

@@ -10,7 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.BackgroundVideoView;
 using Xamarin.Forms.Xaml;
 
-
+ 
 namespace App1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -20,7 +20,8 @@ namespace App1.Views
         public AboutPage()
         {
             InitializeComponent();
-            //DependencyService.Get<IAudio>().PlayAudioFile("MusicBG.mp3");
+            DependencyService.Get<IAudio>().PlayAudioFile("Yehey.mp3");
+
            
 
         }
@@ -29,7 +30,7 @@ namespace App1.Views
         {
             await Navigation.PushAsync(new ItemDetailPage(),false);
 
-            DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
+            DependencyService.Get<IAudio>().PlayAudioFile("BGMusicv2.mp3");
 
             DependencyService.Get<IAudio>().PlayAudioFile("Quick.wav");
         }

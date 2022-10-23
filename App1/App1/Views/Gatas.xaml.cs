@@ -12,22 +12,11 @@ namespace App1.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Gatas : ContentPage
     {
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Gatas2(), false); }
         public Gatas()
         {
             InitializeComponent();
         }
-        async void OnDrop(object sender, DropEventArgs e)
-        {
-            if (e.Data.ToString() != "A")
-            {
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Gunting(), false);
-            }
-            else
-            {
-                await DisplayAlert("Sorry", "Try Again", "OK");
-              
-            }
-        }
+        
     }
 }

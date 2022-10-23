@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Views.kulay25"
+             x:Class="App1.Views.kulay27"
              xmlns:vm="clr-namespace:App1.ViewModels"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
 
@@ -55,16 +55,7 @@
                 </Image>
 
 
-                <Image Source="SUNY.png"
-         Opacity="10"
-         HeightRequest="300"
-         WidthRequest="500"
-         AbsoluteLayout.LayoutBounds="170, 1">
-                    <Image.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Image.GestureRecognizers>
-                </Image>
-
+             
             </AbsoluteLayout>
         </Grid>
     </StackLayout>

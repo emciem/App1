@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Alpabet1"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
              >
 
     <StackLayout>
         <Grid>
+            
             <ffimageloading:SvgCachedImage Source="Aso1.png" Aspect="Fill" />
-            <AbsoluteLayout>
+            <AbsoluteLayout FlyoutItem.IsVisible="True">
+
+              
                 <Image Source="SmallA.png" 
                        Opacity="0"
          HeightRequest="80"

@@ -6,10 +6,9 @@
              Title="{Binding Title}"
              Shell.NavBarIsVisible="False">
 
-    <AbsoluteLayout Margin="50">
-
+    <AbsoluteLayout >
         <ImageButton Source="HomeLogoABC.png"
-                    AbsoluteLayout.LayoutBounds="300,40"
+                    AbsoluteLayout.LayoutBounds="360,90"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     HeightRequest="65"
@@ -18,7 +17,7 @@
                     />
         <ImageButton Source="HomeLogoABC.png"
                     Opacity="0"
-                    AbsoluteLayout.LayoutBounds="555,20"
+                    AbsoluteLayout.LayoutBounds="600,90"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     HeightRequest="65"
@@ -27,7 +26,7 @@
                     />
         <ImageButton Source="HomeLogoABC.png"
                     Opacity="0"
-                    AbsoluteLayout.LayoutBounds="330,110"
+                    AbsoluteLayout.LayoutBounds="370,200"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     HeightRequest="65"
@@ -36,12 +35,22 @@
                     />
         <ImageButton Source="HomeLogoABC.png"
                     Opacity="0"
-                    AbsoluteLayout.LayoutBounds="530,110"
+                    AbsoluteLayout.LayoutBounds="580,200"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     HeightRequest="65"
                     WidthRequest="100"
                     Clicked="BtnHugis_Clicked"
+                    />
+
+        <ImageButton Source="HomeLogoABC.png"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="1,1"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    HeightRequest="65"
+                    WidthRequest="100"
+                    Clicked="Back_Clicked"
                     />
     </AbsoluteLayout>
 

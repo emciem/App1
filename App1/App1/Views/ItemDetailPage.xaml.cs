@@ -56,7 +56,13 @@ namespace App1.Views
         private async void BtnHugis_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
-            await Navigation.PushAsync(new Kulay(), false);
+            await Navigation.PushAsync(new Hugis1(), false);
+        }
+
+        private async void Back_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
+            await Navigation.PushAsync(new AboutPage(), false);
         }
     }
 

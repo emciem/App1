@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudioPlayEx;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,18 +18,13 @@ namespace App1.Views
 			InitializeComponent ();
 		}
 
-        async void OnDrop(object sender, DropEventArgs e)
+        private async void Btn_Clicked(object sender, EventArgs e)
         {
-            if (e.Data.ToString() != "A")
-            {
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Dahon(), false);
-            }
-            else
-            {
-                await DisplayAlert("Sorry", "Try Again", "OK");
-               
-            }
+            await Navigation.PushAsync(new Kahon(), false);
+
+            DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
+
+            DependencyService.Get<IAudio>().PlayAudioFile("Quick.wav");
         }
     }
 }

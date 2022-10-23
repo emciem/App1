@@ -13,24 +13,13 @@ namespace App1.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Dahon : ContentPage
     {
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Dahon2(), false); }
         public Dahon()
         {
             InitializeComponent();
 
             DependencyService.Get<IAudio>().PlayAudioFile("DAHON.m4a");
         }
-        async void OnDrop(object sender, DropEventArgs e)
-        {
-            if (e.Data.ToString() != "A")
-            {
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new Dino(), false);
-            }
-            else
-            {
-                await DisplayAlert("Sorry", "Try Again", "OK");
-               
-            }
-        }
+       
     }
 }

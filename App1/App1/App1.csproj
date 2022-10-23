@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="FakeItEasy" Version="7.3.1" />
+    <PackageReference Include="Xamanimation" Version="1.3.0" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
@@ -25,8 +26,125 @@
     <Compile Update="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterK.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterK.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterNG.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterNG.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterO.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterO.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterU.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterU.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterT.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterT.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterW.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterW.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterY.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterY.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterNG2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterNG2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterO2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterO2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterU2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterU2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterT2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterT2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterW2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterW2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterY2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterY2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterD.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterD.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterD2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterD2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterE.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterE.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterG.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterG.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterE2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterE2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterG2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterG2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterS.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterS.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterS2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterS2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterR2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterR2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterL.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterL.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterI.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterI.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterL2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterL2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterI2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterI2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterM.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterM.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterM2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterM2.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\AlpabeBonusGameLetterB.xaml.cs">
       <DependentUpon>AlpabeBonusGameLetterB.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterH.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterH.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterH2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterH2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterN.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterN.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterN2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterN2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetter02.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetter02.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetter0.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetter0.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterP.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterP.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterP2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterP2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetter.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetter.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterR.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterR.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AlpabeBonusGameLetterK2.xaml.cs">
+      <DependentUpon>AlpabeBonusGameLetterK2.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\AlpabeBonusGameLetterBv2.xaml.cs">
       <DependentUpon>AlpabeBonusGameLetterBv2.xaml</DependentUpon>
@@ -34,8 +152,29 @@
     <Compile Update="Views\AlpabeBonusGameLetterAv2.xaml.cs">
       <DependentUpon>AlpabeBonusGameLetterAv2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\AlpabetHome.xaml.cs">
+      <DependentUpon>AlpabetHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Elesi2.xaml.cs">
+      <DependentUpon>Elesi2.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Bolav2.xaml.cs">
       <DependentUpon>Bolav2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Dahon2.xaml.cs">
+      <DependentUpon>Dahon2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Gatas2.xaml.cs">
+      <DependentUpon>Gatas2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hari2.xaml.cs">
+      <DependentUpon>Hari2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Ibon2.xaml.cs">
+      <DependentUpon>Ibon2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kahon2.xaml.cs">
+      <DependentUpon>Kahon2.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Kulay.xaml.cs">
       <DependentUpon>Kulay.xaml</DependentUpon>
@@ -45,6 +184,33 @@
     </Compile>
     <Compile Update="Views\Kulay24.xaml.cs">
       <DependentUpon>Kulay24.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay28.xaml.cs">
+      <DependentUpon>Kulay28.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay29.xaml.cs">
+      <DependentUpon>Kulay29.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay36.xaml.cs">
+      <DependentUpon>Kulay36.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay35.xaml.cs">
+      <DependentUpon>Kulay35.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay34.xaml.cs">
+      <DependentUpon>Kulay34.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay33.xaml.cs">
+      <DependentUpon>Kulay33.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay32.xaml.cs">
+      <DependentUpon>Kulay32.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay31.xaml.cs">
+      <DependentUpon>Kulay31.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Kulay30.xaml.cs">
+      <DependentUpon>Kulay30.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Kulay27.xaml.cs">
       <DependentUpon>Kulay27.xaml</DependentUpon>
@@ -60,6 +226,27 @@
     </Compile>
     <Compile Update="Views\Kulay19.xaml.cs">
       <DependentUpon>Kulay19.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis2.xaml.cs">
+      <DependentUpon>Hugis2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis3.xaml.cs">
+      <DependentUpon>Hugis3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis4.xaml.cs">
+      <DependentUpon>Hugis4.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis5.xaml.cs">
+      <DependentUpon>Hugis5.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis6.xaml.cs">
+      <DependentUpon>Hugis6.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis7.xaml.cs">
+      <DependentUpon>Hugis7.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hugis1.xaml.cs">
+      <DependentUpon>Hugis1.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\KulayHome10v2.xaml.cs">
       <DependentUpon>KulayHome10v2.xaml</DependentUpon>
@@ -93,6 +280,21 @@
     </Compile>
     <Compile Update="Views\KulayHome9v2.xaml.cs">
       <DependentUpon>KulayHome9v2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Langgam2.xaml.cs">
+      <DependentUpon>Langgam2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Mannga2.xaml.cs">
+      <DependentUpon>Mannga2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Ngipin.xaml.cs">
+      <DependentUpon>Ngipin.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Ngipin2.xaml.cs">
+      <DependentUpon>Ngipin2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Niyog2.xaml.cs">
+      <DependentUpon>Niyog2.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Number1v3.xaml.cs">
       <DependentUpon>Number1v3.xaml</DependentUpon>
@@ -178,8 +380,32 @@
     <Compile Update="Views\Number3.xaml.cs">
       <DependentUpon>Number3.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Number2.xaml.cs">
-      <DependentUpon>Number2.xaml</DependentUpon>
+    <Compile Update="Views\Orasan2.xaml.cs">
+      <DependentUpon>Orasan2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Pusa2.xaml.cs">
+      <DependentUpon>Pusa2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Rosas2.xaml.cs">
+      <DependentUpon>Rosas2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Saging2.xaml.cs">
+      <DependentUpon>Saging2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Unggoy.xaml.cs">
+      <DependentUpon>Unggoy.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Unggoy2.xaml.cs">
+      <DependentUpon>Unggoy2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Timba2.xaml.cs">
+      <DependentUpon>Timba2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Walis2.xaml.cs">
+      <DependentUpon>Walis2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Yelo2.xaml.cs">
+      <DependentUpon>Yelo2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
