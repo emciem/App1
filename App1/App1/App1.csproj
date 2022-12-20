@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
     <PackageReference Include="FakeItEasy" Version="7.3.1" />
+    <PackageReference Include="IKVM" Version="8.2.3" />
     <PackageReference Include="Xamanimation" Version="1.3.0" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
@@ -152,6 +154,10 @@
     <Compile Update="Views\AlpabeBonusGameLetterAv2.xaml.cs">
       <DependentUpon>AlpabeBonusGameLetterAv2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Atis.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Atis.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\AlpabetHome.xaml.cs">
       <DependentUpon>AlpabetHome.xaml</DependentUpon>
     </Compile>
@@ -166,6 +172,9 @@
     </Compile>
     <Compile Update="Views\Gatas2.xaml.cs">
       <DependentUpon>Gatas2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Hari3.xaml.cs">
+      <DependentUpon>Hari3.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Hari2.xaml.cs">
       <DependentUpon>Hari2.xaml</DependentUpon>
@@ -281,8 +290,14 @@
     <Compile Update="Views\KulayHome9v2.xaml.cs">
       <DependentUpon>KulayHome9v2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Langgam3.xaml.cs">
+      <DependentUpon>Langgam3.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Langgam2.xaml.cs">
       <DependentUpon>Langgam2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Mannga3.xaml.cs">
+      <DependentUpon>Mannga3.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Mannga2.xaml.cs">
       <DependentUpon>Mannga2.xaml</DependentUpon>
@@ -290,8 +305,14 @@
     <Compile Update="Views\Ngipin.xaml.cs">
       <DependentUpon>Ngipin.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Ngipin3.xaml.cs">
+      <DependentUpon>Ngipin3.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Ngipin2.xaml.cs">
       <DependentUpon>Ngipin2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Niyog3.xaml.cs">
+      <DependentUpon>Niyog3.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Niyog2.xaml.cs">
       <DependentUpon>Niyog2.xaml</DependentUpon>
@@ -383,14 +404,26 @@
     <Compile Update="Views\Orasan2.xaml.cs">
       <DependentUpon>Orasan2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Pusa3.xaml.cs">
+      <DependentUpon>Pusa3.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Pusa2.xaml.cs">
       <DependentUpon>Pusa2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Rosas3.xaml.cs">
+      <DependentUpon>Rosas3.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Rosas2.xaml.cs">
       <DependentUpon>Rosas2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Saging3.xaml.cs">
+      <DependentUpon>Saging3.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Saging2.xaml.cs">
       <DependentUpon>Saging2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Timba3.xaml.cs">
+      <DependentUpon>Timba3.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Unggoy.xaml.cs">
       <DependentUpon>Unggoy.xaml</DependentUpon>
@@ -401,11 +434,24 @@
     <Compile Update="Views\Timba2.xaml.cs">
       <DependentUpon>Timba2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Walis3.xaml.cs">
+      <DependentUpon>Walis3.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Walis2.xaml.cs">
       <DependentUpon>Walis2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Yelo3.xaml.cs">
+      <DependentUpon>Yelo3.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Yelo2.xaml.cs">
       <DependentUpon>Yelo2.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Atis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

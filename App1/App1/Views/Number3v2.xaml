@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Number3v2"
              xmlns:vm="clr-namespace:App1.ViewModels"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             Title="{Binding Title}">
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}"
+             Shell.NavBarIsVisible="False">
 
     <StackLayout>
         <Grid  HorizontalOptions="FillAndExpand"
@@ -19,6 +20,22 @@
                     HeightRequest="200" 
                     WidthRequest="100" 
                     Clicked="Btn_Clicked"
+                    />
+
+            <forms:AnimationView
+                x:Name="HomeBTN"
+                Animation="HomeBTN.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Back"
                     />
         </Grid>
     </StackLayout>

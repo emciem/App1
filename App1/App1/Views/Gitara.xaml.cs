@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudioPlayEx;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace App1.Views
         {
             if (e.Data.ToString() != "A")
             {
-                await DisplayAlert("Correct", "Congratulations!", "OK");
+                DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
                 await Navigation.PushAsync(new Elesi(), false);
             }
             else

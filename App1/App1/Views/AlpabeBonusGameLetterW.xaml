@@ -6,90 +6,98 @@
              BackgroundImage="">
     <ContentPage.Content>
         <AbsoluteLayout Margin="10">
-            <Image 
-         Source="W41.png"
+            <ImageButton 
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka51.png"
          HeightRequest="120"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="1, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W42.png"
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka52.png"
          HeightRequest="120"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="210, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W43.png"
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka53.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="400, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W44.png"
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka54.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="600, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W45.png"
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka55.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="200, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W46.png"
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka56.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="450, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W47.png"
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka57.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="600, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="W48.png"
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka58.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutBounds="340, 150">
+
+            </ImageButton>
+            <ImageButton
+         Clicked="Btn_Clicked"
+         BackgroundColor="Transparent"
+         Source="Ka59.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="20, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
+
+            </ImageButton>
 
 
 
-            <Image 
-                Source="A49.png"
+            <!--<Image 
+                Source="B5.png"
          HeightRequest="100"
          WidthRequest="200"
          AbsoluteLayout.LayoutBounds="320, 200">
                 <Image.GestureRecognizers>
                     <DropGestureRecognizer Drop="OnDrop" />
                 </Image.GestureRecognizers>
-            </Image>
+            </Image>-->
             <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->
             <!--<ffimageloading:SvgCachedImage HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Source="NewBG.gif" HeightRequest="100" WidthRequest="100" />-->
         </AbsoluteLayout>

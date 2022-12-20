@@ -3,55 +3,121 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Alpabet1"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             BackgroundImage="AlphahomeBG.jpg"
+             Shell.NavBarIsVisible="False"
              >
 
-    <StackLayout>
-        <Grid>
+    <ContentPage.Content>
+        <AbsoluteLayout >
+
             
-            <ffimageloading:SvgCachedImage Source="Aso1.png" Aspect="Fill" />
-            <AbsoluteLayout FlyoutItem.IsVisible="True">
+            <forms:AnimationView
+                 x:Name="animationView"
+                Animation="A.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView1"
+                Animation="S.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.75,.9"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView2"
+                Animation="O.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.9,.9"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView3"
+                Animation="Aso.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.1,0.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="390"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView4"
+                Animation="LetterA.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.6,.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="135"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView6"
+                Animation="A.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.6,1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                x:Name="HomeBTN"
+                Animation="HomeBTN.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Back"
+                    />
 
-              
-                <Image Source="SmallA.png" 
-                       Opacity="0"
-         HeightRequest="80"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="470, 40">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="AA.png" 
-         Opacity="0"
-         HeightRequest="105"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="220, 15">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
 
 
-                <Label FontSize="Header"
-                       Opacity="0"
-         HorizontalTextAlignment="Center"
-         x:Name="labelAnimated"
-         Text="hiuyuiuihuihuih"
-         TextColor="Red"
-         HeightRequest="150"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="220, 180">
-                    <Label.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Label.GestureRecognizers>
-                </Label>
-
-            </AbsoluteLayout>
-        </Grid>
-    </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 
 
 
-   
+
 </ContentPage>

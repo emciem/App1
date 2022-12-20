@@ -2,16 +2,97 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views._123Home"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             BackgroundImage="BGnumbers.jpg"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              Title="{Binding Title}">
 
 
     <ContentPage.Content>
+        
+        
         <!--ANNA-->
         <Grid>
-         
+            <ffimageloading:SvgCachedImage Source="Clouds.svg" 
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                Aspect="Fill"
+                />
+
+            
+            
             <AbsoluteLayout>
+
+
+                <forms:AnimationView
+                 x:Name="Clouds"
+                Animation="clouds.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, 1.2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="800"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+
+
+                <forms:AnimationView
+                 x:Name="tree1"
+                Animation="tree1.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".001, .97"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+
+                <forms:AnimationView
+                 x:Name="tree2"
+                Animation="tree2.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1.2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="300"
+                WidthRequest="400"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+                <forms:AnimationView
+                 x:Name="tree3"
+                Animation="tree2.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, 1.2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="300"
+                WidthRequest="400"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+
+                <forms:AnimationView
+                 x:Name="birds"
+                Animation="birds.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, .5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="1000"
+                WidthRequest="1000"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+
+
                 <ImageButton Source="HomeLogoABC.png"
                     Opacity="0"
                     AbsoluteLayout.LayoutBounds="200, 200"
@@ -28,7 +109,8 @@
          WidthRequest="150"
          
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="160, 1">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".2, .1">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -40,7 +122,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked4"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="490, 1">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0.6, .1">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -51,7 +134,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="10, 40">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0, .1">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -63,7 +147,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked3"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="300, 30">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".4, .1">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -74,7 +159,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked5"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="650, 10">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0.8, .1">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -86,7 +172,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked6"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="40, 180">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0.2, .7">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -97,7 +184,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked7"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="200, 140">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0.4, .7">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -109,7 +197,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked8"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="320, 160">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0.6, .7">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -120,7 +209,8 @@
          WidthRequest="150"
          Clicked="Btn_Clicked9"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="500, 130">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0.8, .7">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
@@ -132,11 +222,16 @@
          WidthRequest="150"
          Clicked="Btn_Clicked10"
          BackgroundColor="Transparent"
-         AbsoluteLayout.LayoutBounds="650, 160">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="1, .7">
                     <ImageButton.GestureRecognizers>
                         <DragGestureRecognizer />
                     </ImageButton.GestureRecognizers>
                 </ImageButton>
+
+
+
+
             </AbsoluteLayout>
         </Grid>
     </ContentPage.Content>

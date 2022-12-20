@@ -2,42 +2,116 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Bola"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             BackgroundImage="AlphahomeBG.jpg"
+              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <Grid>
-            <ffimageloading:SvgCachedImage Source="bola1.png" Aspect="Fill" />
-            <AbsoluteLayout>
-                <!--<Image Source="Smallb.png" 
-         HeightRequest="95"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="400, 23">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="BigB.png" 
-         HeightRequest="110"
-         WidthRequest="170"
-         AbsoluteLayout.LayoutBounds="200, 1">
-                    <Image.GestureRecognizers>
-                        <DragGestureRecognizer />
-                    </Image.GestureRecognizers>
-                </Image>
+        <AbsoluteLayout >
 
 
-                <Label FontSize="Header"
-         HorizontalTextAlignment="Center"
-         Text="b"
-         Opacity="0"
-         HeightRequest="150"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="300, 190">
-                    <Label.GestureRecognizers>
-                        <DropGestureRecognizer Drop="OnDrop" />
-                    </Label.GestureRecognizers>
-                </Label>-->
+            <forms:AnimationView
+                 x:Name="animationView"
+                Animation="Small b.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="150"
+                WidthRequest="120"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView1"
+                Animation="O.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.75,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView2"
+                Animation="BigL.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.85,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="LetterA"
+                Animation="A.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".95,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView3"
+                Animation="Ball.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.15,.9"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="300"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView4"
+                Animation="bigB.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.6,.04"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="220"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView6"
+                Animation="bigB.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.6,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
 
-            </AbsoluteLayout>
-        </Grid>
+
+
+
+        </AbsoluteLayout>
     </ContentPage.Content>
+
 </ContentPage>

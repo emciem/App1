@@ -19,18 +19,13 @@ namespace App1.Views
             DependencyService.Get<IAudio>().PlayAudioFile("ILAGAY NATIN ANG LETRANG NGA SA BASKET.m4a");
         }
 
-        async void OnDrop(object sender, DropEventArgs e)
+        private async void Btn_Clicked(object sender, EventArgs e)
         {
-            if (e.Data.ToString() != "A")
-            {
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new AlpabeBonusGameLetterNG2(), false);
-            }
-            else
-            {
-                await DisplayAlert("Sorry", "Try Again", "OK");
-               
-            }
+            await Navigation.PushAsync(new AlpabeBonusGameLetterNG2(), false);
+
+            DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
+
+            DependencyService.Get<IAudio>().PlayAudioFile("Quick.wav");
         }
     }
 }

@@ -3,24 +3,93 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Number5v3"
              xmlns:vm="clr-namespace:App1.ViewModels"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             Title="{Binding Title}">
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}"
+             Shell.NavBarIsVisible="False">
 
-    <StackLayout>
-        <Grid  HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
-            <ffimageloading:SvgCachedImage Source="A15.png" Aspect="Fill"/>
 
-            <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0" 
-                    AbsoluteLayout.LayoutBounds="200, 200"
-                    HorizontalOptions="Fill"
-                    VerticalOptions="CenterAndExpand" 
-                    HeightRequest="200" 
-                    WidthRequest="100" 
-                    
+    <ContentPage.Content>
+        <AbsoluteLayout >
+            <ffimageloading:SvgCachedImage Source="number5BG.svg" 
+                                           Aspect="Fill"
+                                           WidthRequest="1200"
+                                           HeightRequest="800"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional"
+                                           AbsoluteLayout.LayoutBounds=".5,.5"/>
+
+
+
+
+            <ffimageloading:SvgCachedImage Source="number5logo.svg" 
+                 x:Name="animationView" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                FadeAnimationEnabled="True"
+                FadeAnimationDuration="2000"
+                FadeAnimationForCachedImages="True"                           
                     />
-        </Grid>
-    </StackLayout>
+
+            <ffimageloading:SvgCachedImage Source="number5logo.1.svg" 
+                 x:Name="animationView1"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".1,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                FadeAnimationEnabled="True"
+                FadeAnimationDuration="2000"
+                FadeAnimationForCachedImages="True"  
+               
+                    />
+            <ffimageloading:SvgCachedImage Source="number5logo.2.svg" 
+                 x:Name="animationView2"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                FadeAnimationEnabled="True"
+                FadeAnimationDuration="2000"
+                FadeAnimationForCachedImages="True"                           
+               
+                    />
+            <ffimageloading:SvgCachedImage Source="number5logo.3.svg" 
+                 x:Name="animationView4"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,-.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                FadeAnimationEnabled="True"
+                FadeAnimationDuration="2000"
+                FadeAnimationForCachedImages="True"     
+                    />
+
+            <forms:AnimationView
+                x:Name="HomeBTN"
+                Animation="HomeBTN.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Back"
+                    />
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+
 
 </ContentPage>  

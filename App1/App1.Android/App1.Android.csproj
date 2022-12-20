@@ -43,6 +43,11 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <MandroidI18n />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -75,6 +80,173 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\LetterA.json" />
+    <AndroidAsset Include="Assets\AsoA.json" />
+    <AndroidAsset Include="Assets\isa.json" />
+    <AndroidAsset Include="Assets\HomeABCNEW.json" />
+    <AndroidAsset Include="Assets\numbershome.json" />
+    <AndroidAsset Include="Assets\Shapes.json" />
+    <AndroidAsset Include="Assets\Paint Brush.json" />
+    <AndroidAsset Include="Assets\clouds.json" />
+    <AndroidAsset Include="Assets\stars.json" />
+    <AndroidAsset Include="Assets\Colors.json" />
+    <AndroidAsset Include="Assets\numbers.json" />
+    <AndroidAsset Include="Assets\Crayon.json" />
+    <AndroidAsset Include="Assets\GreenStick.json" />
+    <AndroidAsset Include="Assets\rectri.json" />
+    <AndroidAsset Include="Assets\rubic.json" />
+    <AndroidAsset Include="Assets\minicircle.json" />
+    <AndroidAsset Include="Assets\A.json" />
+    <AndroidAsset Include="Assets\Aso.json" />
+    <AndroidAsset Include="Assets\O.json" />
+    <AndroidAsset Include="Assets\S.json" />
+    <AndroidAsset Include="Assets\J10.json" />
+    <AndroidAsset Include="Assets\J1.json" />
+    <AndroidAsset Include="Assets\J2.json" />
+    <AndroidAsset Include="Assets\Letteri.json" />
+    <AndroidAsset Include="Assets\J1.1.json" />
+    <AndroidAsset Include="Assets\J1.2.json" />
+    <AndroidAsset Include="Assets\J1.3.json" />
+    <AndroidAsset Include="Assets\2.json" />
+    <AndroidAsset Include="Assets\J0.json" />
+    <AndroidAsset Include="Assets\J2.1.json" />
+    <AndroidAsset Include="Assets\J2.2.json" />
+    <AndroidAsset Include="Assets\J2.3.json" />
+    <AndroidAsset Include="Assets\J3.1.json" />
+    <AndroidAsset Include="Assets\J3.2.json" />
+    <AndroidAsset Include="Assets\J3.3.json" />
+    <AndroidAsset Include="Assets\J4.1.json" />
+    <AndroidAsset Include="Assets\J4.2.json" />
+    <AndroidAsset Include="Assets\J5.1.json" />
+    <AndroidAsset Include="Assets\J5.2.json" />
+    <AndroidAsset Include="Assets\J5.3.json" />
+    <AndroidAsset Include="Assets\J6.1.json" />
+    <AndroidAsset Include="Assets\J6.2.json" />
+    <AndroidAsset Include="Assets\J6.3.json" />
+    <AndroidAsset Include="Assets\J6.json" />
+    <AndroidAsset Include="Assets\J7.1.json" />
+    <AndroidAsset Include="Assets\J7.2.json" />
+    <AndroidAsset Include="Assets\J7.3.json" />
+    <AndroidAsset Include="Assets\J7.json" />
+    <AndroidAsset Include="Assets\J8.1.json" />
+    <AndroidAsset Include="Assets\J8.2.json" />
+    <AndroidAsset Include="Assets\J8.3.json" />
+    <AndroidAsset Include="Assets\J9.1.json" />
+    <AndroidAsset Include="Assets\J9.2.json" />
+    <AndroidAsset Include="Assets\J9.3.json" />
+    <AndroidAsset Include="Assets\handdrag.json" />
+    <AndroidAsset Include="Assets\mountain.json" />
+    <AndroidAsset Include="Assets\redpaint.json" />
+    <AndroidAsset Include="Assets\roseBG.json" />
+    <AndroidAsset Include="Assets\rose.json" />
+    <AndroidAsset Include="Assets\ribbonBG.json" />
+    <AndroidAsset Include="Assets\ribbon.json" />
+    <AndroidAsset Include="Assets\appleBG.json" />
+    <AndroidAsset Include="Assets\apple.json" />
+    <AndroidAsset Include="Assets\click.json" />
+    <AndroidAsset Include="Assets\bubble.json" />
+    <AndroidAsset Include="Assets\sky.json" />
+    <AndroidAsset Include="Assets\skyBG.json" />
+    <AndroidAsset Include="Assets\dolphinBG.json" />
+    <AndroidAsset Include="Assets\dolphin.json" />
+    <AndroidAsset Include="Assets\turtleBG.json" />
+    <AndroidAsset Include="Assets\frogBG.json" />
+    <AndroidAsset Include="Assets\leaveBG.json" />
+    <AndroidAsset Include="Assets\turtle.json" />
+    <AndroidAsset Include="Assets\Leave.json" />
+    <AndroidAsset Include="Assets\frog.json" />
+    <AndroidAsset Include="Assets\DuckBG.json" />
+    <AndroidAsset Include="Assets\sunBG.json" />
+    <AndroidAsset Include="Assets\duck.json" />
+    <AndroidAsset Include="Assets\sun.json" />
+    <AndroidAsset Include="Assets\bananaBG.json" />
+    <AndroidAsset Include="Assets\banana.json" />
+    <AndroidAsset Include="Assets\wave.json" />
+    <AndroidAsset Include="Assets\waveBG.json" />
+    <AndroidAsset Include="Assets\sdraw.json" />
+    <AndroidAsset Include="Assets\i.json" />
+    <AndroidAsset Include="Assets\n.json" />
+    <AndroidAsset Include="Assets\Anna.json" />
+    <AndroidAsset Include="Assets\t.json" />
+    <AndroidAsset Include="Assets\shine.json" />
+    <AndroidAsset Include="Assets\tree2.json" />
+    <AndroidAsset Include="Assets\tree1.json" />
+    <AndroidAsset Include="Assets\Suns.json" />
+    <AndroidAsset Include="Assets\birds.json" />
+    <AndroidAsset Include="Assets\Educ.json" />
+    <AndroidAsset Include="Assets\mountainBG.json" />
+    <AndroidAsset Include="Assets\Playbtn.json" />
+    <AndroidAsset Include="Assets\School.json" />
+    <AndroidAsset Include="Assets\Bus.json" />
+    <AndroidAsset Include="Assets\Gabi.json" />
+    <AndroidAsset Include="Assets\Gatas.json" />
+    <AndroidAsset Include="Assets\Gunting.json" />
+    <AndroidAsset Include="Assets\Karen.json" />
+    <AndroidAsset Include="Assets\Mouse.json" />
+    <AndroidAsset Include="Assets\Wood.json" />
+    <AndroidAsset Include="Assets\Ball.json" />
+    <AndroidAsset Include="Assets\Box.json" />
+    <AndroidAsset Include="Assets\Boy.json" />
+    <AndroidAsset Include="Assets\Damo.json" />
+    <AndroidAsset Include="Assets\Dino.json" />
+    <AndroidAsset Include="Assets\Elepante.json" />
+    <AndroidAsset Include="Assets\Elesi.json" />
+    <AndroidAsset Include="Assets\BigM.json" />
+    <AndroidAsset Include="Assets\BigL.json" />
+    <AndroidAsset Include="Assets\BigJ.json" />
+    <AndroidAsset Include="Assets\BigH.json" />
+    <AndroidAsset Include="Assets\Smallg.json" />
+    <AndroidAsset Include="Assets\Smalle.json" />
+    <AndroidAsset Include="Assets\Smalld.json" />
+    <AndroidAsset Include="Assets\BigG.json" />
+    <AndroidAsset Include="Assets\BigE.json" />
+    <AndroidAsset Include="Assets\BigD.json" />
+    <AndroidAsset Include="Assets\BigK.json" />
+    <AndroidAsset Include="Assets\Small b.json" />
+    <AndroidAsset Include="Assets\bigB.json" />
+    <AndroidAsset Include="Assets\BigN.json" />
+    <AndroidAsset Include="Assets\pizza.json" />
+    <AndroidAsset Include="Assets\watermelon.json" />
+    <AndroidAsset Include="Assets\box1.json" />
+    <AndroidAsset Include="Assets\door.json" />
+    <AndroidAsset Include="Assets\Chocolate.json" />
+    <AndroidAsset Include="Assets\Donut.json" />
+    <AndroidAsset Include="Assets\earth.json" />
+    <AndroidAsset Include="Assets\Clock.json" />
+    <AndroidAsset Include="Assets\Cheese.json" />
+    <AndroidAsset Include="Assets\BeachBall.json" />
+    <AndroidAsset Include="Assets\TrainBG.json" />
+    <AndroidAsset Include="Assets\Sea.json" />
+    <AndroidAsset Include="Assets\Nature3.json" />
+    <AndroidAsset Include="Assets\Nature2.json" />
+    <AndroidAsset Include="Assets\Nature.json" />
+    <AndroidAsset Include="Assets\City4.json" />
+    <AndroidAsset Include="Assets\City3.json" />
+    <AndroidAsset Include="Assets\City2.json" />
+    <AndroidAsset Include="Assets\City.json" />
+    <AndroidAsset Include="Assets\HomeBTN.json" />
+    <AndroidAsset Include="Assets\Basket.json" />
+    <AndroidAsset Include="Assets\Star1.json" />
+    <AndroidAsset Include="Assets\susi.json" />
+    <AndroidAsset Include="Assets\teeth.json" />
+    <AndroidAsset Include="Assets\train.json" />
+    <AndroidAsset Include="Assets\unggoy.json" />
+    <AndroidAsset Include="Assets\worm.json" />
+    <AndroidAsset Include="Assets\backgroundhome.json" />
+    <AndroidAsset Include="Assets\BGhome.json" />
+    <AndroidAsset Include="Assets\hanna.json" />
+    <AndroidAsset Include="Assets\hari.json" />
+    <AndroidAsset Include="Assets\lamesa.json" />
+    <AndroidAsset Include="Assets\lando.json" />
+    <AndroidAsset Include="Assets\lapis.json" />
+    <AndroidAsset Include="Assets\mangga.json" />
+    <AndroidAsset Include="Assets\mansanas.json" />
+    <AndroidAsset Include="Assets\martin.json" />
+    <AndroidAsset Include="Assets\mouth.json" />
+    <AndroidAsset Include="Assets\nurse.json" />
+    <AndroidAsset Include="Assets\relo.json" />
+    <AndroidAsset Include="Assets\sagings.json" />
+    <AndroidAsset Include="Assets\roses.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -159,9 +331,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Aso.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Atis.gif" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Bola.gif" />
@@ -2445,6 +2614,321 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Hugis6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\AlphahomeBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NumberBG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Stage.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S9.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\S10.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number10BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number9BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number8BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number6BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Number5BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Number4BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number3BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number1BG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number1logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number1logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number1logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number1logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number10logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number9logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number9logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number9logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number9logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number8logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number8logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number8logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number7logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number7logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number7logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number7logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number6logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number6logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number6logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number5logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number5logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number5logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number5logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number4logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number4logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number4logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number3logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number3logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number3logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number3logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number4logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number2logo.3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number2logo.2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number2logo.1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\number2logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\easel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mountain.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\painboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\palette.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\AlphahomeBG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A3rdPageBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\atis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sunandclouds.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Lose1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Win1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Clouds.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\window.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Building.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Shelf.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO ANIM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO APAT.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO DALAWA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO ISA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO LIMA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO PITO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO SAMPU.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO SIYAM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO TATLO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AKO ANG NUMERO WALO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ANIM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\APAT.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DALAWA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO ANIM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO APAT.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO DALAWA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO ISA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO LIMA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO PITO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO SAMPU.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO SIYAM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATIN ANG NUMERO TATLO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HANAPIN NATINANG NUMERO WALO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ISA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KULAYAN NATIN NG DILAW AND SAGING.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KULAYAN NATIN NG DILAW ANG ARAW.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KULAYAN NATIN NG DILAW ANG BIBE.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LIMA.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MAGALING.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\magandang araw kilalanin natin ang abakada numero kulay at hugis.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MAHUSAY.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PITO.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SAMPU.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SIYAM.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\TATLO.m4a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

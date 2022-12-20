@@ -3,24 +3,131 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.AboutPage"
              xmlns:vm="clr-namespace:App1.ViewModels"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              Shell.NavBarIsVisible="False"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="LightSkyBlue">
 
-    <StackLayout>
-        <Grid>
-            <ffimageloading:SvgCachedImage Source="NewBG.gif" Aspect="Fill" />
+    
 
-            <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0" 
-                    AbsoluteLayout.LayoutBounds="200, 200"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand" 
-                    HeightRequest="200" 
-                    WidthRequest="100"
-                    Clicked="Btn_Clicked"
-                    />
-        </Grid>
-    </StackLayout>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+            <forms:AnimationView
+                 x:Name="Sun"
+                Animation="Suns.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, -1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="459"
+                WidthRequest="700"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+
+            <forms:AnimationView
+                 x:Name="birds"
+                Animation="mountainBG.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, .5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="1000"
+                WidthRequest="1100"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"/>
+
+            <forms:AnimationView
+                 x:Name="Play"
+                Animation="Playbtn.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, .5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="200"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"
+                Clicked="Btn_Clicked"/>
+
+
+            <forms:AnimationView
+                 x:Name="Birds"
+                Animation="birds.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5, .5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="1100"
+                WidthRequest="1100"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"
+                Clicked="Btn_Clicked"/>
+
+
+            <forms:AnimationView
+                 x:Name="Bus"
+                Animation="Bus.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".01, 2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Infinite"
+                Clicked="Btn_Clicked"/>
+
+
+            <forms:AnimationView
+                 x:Name="School"
+                Animation="School.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1.5, 1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="800"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="True"
+                RepeatMode="Restart"
+                Clicked="Btn_Clicked"/>
+
+
+
+
+
+            <!--<BoxView 
+                BackgroundColor="Red" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+     
+            <BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,1"
+                BackgroundColor="Purple" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+            <BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1,1"
+                BackgroundColor="Aqua" 
+                WidthRequest="50" 
+                HeightRequest="50" />-->
+            <!--<BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.5"
+                BackgroundColor="Navy" 
+                WidthRequest="50" 
+                HeightRequest="50" />-->
+        </AbsoluteLayout>
+    </ContentPage.Content>
 
 </ContentPage>  

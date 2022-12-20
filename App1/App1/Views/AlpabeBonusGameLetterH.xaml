@@ -1,93 +1,204 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="App1.Views.AlpabeBonusGameLetterH"
              BackgroundColor="White">
     <ContentPage.Content>
-        <AbsoluteLayout Margin="10">
+        <AbsoluteLayout >
+
+            <forms:AnimationView
+                 x:Name="animationViewribbon"
+                Animation="City.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="800"
+                WidthRequest="2000"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+            <forms:AnimationView
+                 x:Name="BubbleSmall"
+                Animation="bubble.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0, .1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="False"
+           
+                    />
+            <forms:AnimationView
+                 x:Name="BubbleSmall1"
+                Animation="bubble.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".3, .7"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="False"
+                    />
+            <forms:AnimationView
+                 x:Name="BubbleSmall2"
+                Animation="bubble.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".6, .1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="False"
+               
+                    />
+            <forms:AnimationView
+                 x:Name="BubbleSmall3"
+                Animation="bubble.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9, .1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                AutoPlay="False"
+              
+                    />
+
             <Image 
-         Source="H0.png"
-         HeightRequest="120"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="1, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="H1.png"
-         HeightRequest="120"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="210, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="H2.png"
-         HeightRequest="100"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="400, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="H3.png"
-         HeightRequest="100"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="600, 1">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
-         Source="H4.png"
-         HeightRequest="100"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="200, 150">
-                <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image 
+                ClassId="Atis"
+         x:Name="Atis"
          Source="H5.png"
-         HeightRequest="100"
+         HeightRequest="120"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="450, 150">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0, .7">
                 <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
+                    <DragGestureRecognizer DropCompleted="AtisShakeClicked" />
                 </Image.GestureRecognizers>
             </Image>
             <Image 
-         Source="H6.png"
-         HeightRequest="100"
+                ClassId="A1"
+                x:Name="A1"
+         Source="H54.png"
+         HeightRequest="120"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="600, 150">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0, .1">
                 <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
+                    <DragGestureRecognizer DropCompleted="Correct1" />
                 </Image.GestureRecognizers>
             </Image>
             <Image 
-         Source="H7.png"
+                ClassId="snake"
+                  x:Name="snake"
+         Source="H58.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="20, 150">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".3, .1">
                 <Image.GestureRecognizers>
-                    <DragGestureRecognizer />
+                    <DragGestureRecognizer DropCompleted="SnakeShakeClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+                ClassId="A2"
+                 x:Name="A2"
+         Source="H52.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".3, .7">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer  DropCompleted="Correct2" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+                ClassId="A3"
+                 x:Name="A3"
+         Source="H54.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".6, .1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer  DropCompleted="Correct3" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+                 ClassId="Sun"
+                 x:Name="Sun"
+                Opacity="1"
+         Source="H55.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".6, .7">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer DropCompleted="SunShakeClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+                ClassId="A4"
+                 x:Name="A4"
+         Source="H55.png"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".9, .1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer  DropCompleted="Correct4" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image 
+                ClassId="Eagle"
+                 x:Name="Eagle"
+         Source="H56.png"
+                Opacity="1"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".9, .7">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer DropCompleted="EagleShakeClicked"  />
                 </Image.GestureRecognizers>
             </Image>
 
 
+            <Label x:Name="lblVal"
+                ClassId="Eagle"
+               Text="0"
+                Opacity="1"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".5, .5">
+
+            </Label>
+
+
+
+
 
             <Image 
-                Source="H8.png"
+                Source="Ka7.png"
+                
          HeightRequest="100"
          WidthRequest="200"
-         AbsoluteLayout.LayoutBounds="320, 200">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".5, 1">
                 <Image.GestureRecognizers>
-                    <DropGestureRecognizer Drop="OnDrop" />
+                    <DropGestureRecognizer />
                 </Image.GestureRecognizers>
             </Image>
             <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->

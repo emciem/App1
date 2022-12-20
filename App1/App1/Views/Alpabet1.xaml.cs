@@ -11,10 +11,10 @@ using Xamarin.Forms.Xaml;
 
 namespace App1.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Alpabet1 : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)] 
+    public partial class Alpabet1 : ContentPage 
     {
-        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Alpabet2(),false); }
+        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(5000); await this.Navigation.PushAsync(new Alpabet2(), false); }
         public Alpabet1()
         {
             InitializeComponent();
@@ -25,8 +25,8 @@ namespace App1.Views
         
         async void OnDrop(object sender, DropEventArgs e)
         {
-            if (e.Data.ToString() != "A") { 
-                await DisplayAlert("Correct", "Congratulations!", "OK");
+            if (e.Data.ToString() != "A") {
+                DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
                 DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
                 await Navigation.PushAsync(new Alpabet2(), false);
                 //await labelAnimated.TranslateTo(-100, 0, 1000);
@@ -38,5 +38,14 @@ namespace App1.Views
               
             }
         }
+
+        private async void Btn_Back(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ItemDetailPage(), false);
+
+            DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
+
+        }
+
     }
 }

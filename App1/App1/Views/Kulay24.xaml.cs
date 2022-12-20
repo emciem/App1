@@ -17,12 +17,35 @@ namespace App1.Views
             InitializeComponent();
         }
 
-        private async void OnDrop(object sender, EventArgs e)
+        private void DragGestureRecognizer_DragStarting(object sender, DragStartingEventArgs e)
         {
-            await Navigation.PushAsync(new Kulay24(), false);
+            animationViewribbon133.Opacity = 0;
+
+        }
+        private void DragGestureRecognizer_DropCompleted(object sender, DropCompletedEventArgs e)
+        {
+
+            animationViewribbon133.Opacity = 0;
             DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
+            DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
+            Navigation.PushAsync(new kulay27(), false);
+
+
+        }
+        private void DropGestureRecognizer_Drop(object sender, DropEventArgs e)
+        {
+            animationViewribbon133.Opacity = 0;
+
         }
 
+
+        private void DragGestureRecognizer_DropCompletedWrong(object sender, DropCompletedEventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
+            DisplayAlert("Sorry", "Try Again", "OK");
+
+
+        }
 
 
     }

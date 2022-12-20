@@ -2,15 +2,114 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Pusa"
-                 xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
+                 xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" BackgroundImage="AlphahomeBG.jpg">
     <ContentPage.Content>
-        <!--ANNA-->
-        <Grid>
-            <ffimageloading:SvgCachedImage Source="Pusa1.png" Aspect="Fill" />
-            <AbsoluteLayout>
-            
+        <AbsoluteLayout >
 
-            </AbsoluteLayout>
-        </Grid>
+
+            <forms:AnimationView
+                 x:Name="animationView"
+                Animation="Small b.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="150"
+                WidthRequest="120"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView1"
+                Animation="O.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.75,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView2"
+                Animation="BigL.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.9,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="LetterA"
+                Animation="A.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="110"
+                WidthRequest="130"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView3"
+                Animation="Ball.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.15,.9"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="300"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView4"
+                Animation="bigB.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.6,.04"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="220"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView6"
+                Animation="bigB.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.6,.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+
+
+        </AbsoluteLayout>
     </ContentPage.Content>
+
 </ContentPage>

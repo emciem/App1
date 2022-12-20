@@ -9,7 +9,7 @@
             <ImageButton 
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P41.png"
+         Source="Ka51.png"
          HeightRequest="120"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="1, 1">
@@ -17,74 +17,74 @@
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P42.png"
+         Source="Ka52.png"
          HeightRequest="120"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="210, 1">
-                
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P43.png"
+         Source="Ka53.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="400, 1">
-                
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P44.png"
+         Source="Ka54.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="600, 1">
-                
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P45.png"
+         Source="Ka55.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="200, 150">
-                
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P46.png"
+         Source="Ka56.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="450, 150">
-                
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P47.png"
+         Source="Ka57.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="600, 150">
-               
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P48.png"
+         Source="Ka58.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="340, 150">
-                
+
             </ImageButton>
             <ImageButton
          Clicked="Btn_Clicked"
          BackgroundColor="Transparent"
-         Source="P49.png"
+         Source="Ka59.png"
          HeightRequest="100"
          WidthRequest="150"
          AbsoluteLayout.LayoutBounds="20, 150">
-                
+
             </ImageButton>
 
 

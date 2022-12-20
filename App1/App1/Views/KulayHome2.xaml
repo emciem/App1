@@ -3,24 +3,239 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.KulayHome2"
              xmlns:vm="clr-namespace:App1.ViewModels"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}" BackgroundColor="DodgerBlue">
 
-             Title="{Binding Title}">
+    <ContentPage.Content>
+        <AbsoluteLayout >
+       
 
-    <StackLayout>
-        <Grid>
-            <ffimageloading:SvgCachedImage Source="K2.png" Aspect="Fill" />
+            <ffimageloading:SvgCachedImage Source="palette.svg" 
+                                           
+                                           FadeAnimationEnabled="True"
+                                           FadeAnimationDuration="1000"
+                                           WidthRequest="150"
+                                           HeightRequest="150"
+                                           FadeAnimationForCachedImages="True"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional"
+                                           AbsoluteLayout.LayoutBounds=".45,.5"/>
 
-            <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0"
-                    AbsoluteLayout.LayoutBounds="200, 200"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand" 
-                    HeightRequest="200"
-                    WidthRequest="100" 
-                    Clicked="Btn_Clicked"
+
+
+            <forms:AnimationView
+                 x:Name="City"
+                Animation="City.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="800"
+                WidthRequest="2000"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
                     />
-        </Grid>
-    </StackLayout>
+
+
+            <ffimageloading:SvgCachedImage Source="paintboard.png"
+                         BackgroundColor="Transparent"
+                                           Aspect="Fill"
+                    Opacity="1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".0,.7"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="400" 
+                    WidthRequest="300" 
+                    />
+            <ffimageloading:SvgCachedImage Source="paintboard.png"
+                         BackgroundColor="Transparent"
+                                           Aspect="Fill"
+                    Opacity="1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".5,.7"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="400" 
+                    WidthRequest="300" 
+                    />
+            <ffimageloading:SvgCachedImage Source="paintboard.png"
+                         BackgroundColor="Transparent"
+                                           Aspect="Fill"
+                    Opacity="1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="1,.7"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="400" 
+                    WidthRequest="300" 
+                    />
+
+
+            <forms:AnimationView
+                 x:Name="animationViewapple"
+                Animation="apple.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".07,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView10"
+                Animation="appleBG.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".07,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked"
+                    />
+
+            <forms:AnimationView
+                x:Name="animationClick"
+                Animation="click.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".07,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked"
+                BindingContext="test"
+                    />
+
+
+            <forms:AnimationView
+                 x:Name="animationViewribbon"
+                Animation="ribbon.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView11"
+                Animation="ribbonBG.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked_ribbon"
+                    />
+            <forms:AnimationView
+                x:Name="animationClick1"
+                Animation="click.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked_ribbon"
+                BindingContext="test"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationViewrose"
+                Animation="rose.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9,.4"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView12"
+                Animation="roseBG.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9,.4"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked_Rose"
+                    />
+            <forms:AnimationView
+                x:Name="animationClick2"
+                Animation="click.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9,.4"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked_Rose"
+                BindingContext="test"
+                    />
+            <forms:AnimationView
+                x:Name="HomeBTN"
+                Animation="HomeBTN.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Back"
+                    />
+
+
+
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
 
 </ContentPage>  

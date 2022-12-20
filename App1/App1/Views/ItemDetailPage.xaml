@@ -1,49 +1,251 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="App1.Views.ItemDetailPage"
              BackgroundImage="Homev1.jpg"
              Title="{Binding Title}"
              Shell.NavBarIsVisible="False">
-
+    <ContentPage.Content>
     <AbsoluteLayout >
-        <ImageButton Source="HomeLogoABC.png"
-                    AbsoluteLayout.LayoutBounds="360,90"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start" 
-                    HeightRequest="65"
-                    WidthRequest="100"
-                    Clicked="Btn_Clicked"
-                    />
-        <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0"
-                    AbsoluteLayout.LayoutBounds="600,90"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start" 
-                    HeightRequest="65"
-                    WidthRequest="100"
-                    Clicked="Btn123_Clicked"
-                    />
-        <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0"
-                    AbsoluteLayout.LayoutBounds="370,200"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start" 
-                    HeightRequest="65"
-                    WidthRequest="100"
-                    Clicked="BtnKulay_Clicked"
-                    />
-        <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0"
-                    AbsoluteLayout.LayoutBounds="580,200"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start" 
-                    HeightRequest="65"
-                    WidthRequest="100"
-                    Clicked="BtnHugis_Clicked"
+
+
+          
+
+
+            <forms:AnimationView
+                 x:Name="animationView"
+                Animation="HomeABCNEW.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.3"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="260"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
                     />
 
-        <ImageButton Source="HomeLogoABC.png"
+            <forms:AnimationView
+                 x:Name="animationView1"
+                Animation="numbers.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,0.3"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
+                    />
+            <forms:AnimationView
+                 x:Name="animationView12"
+                Animation="Crayon.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.7"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="170"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="3"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="BtnKulay_Clicked"
+                
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView2"
+                Animation="Colors.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView4"
+                Animation="Paint Brush.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.8"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView13"
+                Animation="rubic.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,0.6"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="50"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView3"
+                Animation="Shapes.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.85,0.3"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="250"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
+                    />
+        
+           
+
+
+            <forms:AnimationView
+                 x:Name="animationView6"
+                Animation="clouds.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,2.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="700"
+                WidthRequest="400"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="50"
+                RepeatMode="Restart"
+                AutoPlay="True"
+               
+                Clicked="Btn_Clicked"
+                
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView7"
+                Animation="stars.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="700"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="1"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked"
+                
+                    />
+            <forms:AnimationView
+                x:Name="animationView8"
+                Animation="stars.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,-.7"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="700"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="1"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked"
+               
+                
+                    />
+
+            <forms:AnimationView
+                x:Name="animationView9"
+                Animation="stars.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,-.7"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="700"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="1"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked"
+               
+                
+                    />
+            <forms:AnimationView
+                 x:Name="animationView10"
+                Animation="stars.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,.23"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="700"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="1"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="BtnHugis_Clicked"
+               
+                
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView11"
+                Animation="GreenStick.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="-.15,.4"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="700"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="50"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Clicked"
+                
+                    />
+
+
+            <ImageButton Source="HomeLogoABC.png"
                     Opacity="0"
                     AbsoluteLayout.LayoutBounds="1,1"
                     HorizontalOptions="Start"
@@ -52,7 +254,66 @@
                     WidthRequest="100"
                     Clicked="Back_Clicked"
                     />
-    </AbsoluteLayout>
+
+            <Button 
+                
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,.3"
+                BackgroundColor="Red" 
+                WidthRequest="130" 
+                HeightRequest="90"
+                Opacity="0"
+                Clicked="Btn_Clicked"/>
+            <Button 
+                
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,.3"
+                BackgroundColor="Red" 
+                WidthRequest="130" 
+                HeightRequest="90"
+                Opacity="0"
+                Clicked="Btn123_Clicked"/>
+            <Button 
+                
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,.7"
+                BackgroundColor="Red" 
+                WidthRequest="130" 
+                HeightRequest="90"
+                Opacity="0"
+                Clicked="BtnKulay_Clicked"/>
+            <Button 
+                
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.8,.7"
+                BackgroundColor="Red" 
+                WidthRequest="130" 
+                HeightRequest="90"
+                Opacity="0"
+                Clicked="BtnHugis_Clicked"/>
+
+            <forms:AnimationView
+                x:Name="HomeBTN"
+                Animation="HomeBTN.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".012,-.01"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="120"
+                WidthRequest="120"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Back"
+                    />
+
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+
+
 
 
 

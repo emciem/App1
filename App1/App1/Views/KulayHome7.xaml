@@ -3,24 +3,150 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.KulayHome7"
              xmlns:vm="clr-namespace:App1.ViewModels"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              Title="{Binding Title}">
 
-    <StackLayout>
-        <Grid>
-            <ffimageloading:SvgCachedImage Source="K7.png" Aspect="Fill" />
-
-            <ImageButton Source="HomeLogoABC.png"
-                    Opacity="0"
-                    AbsoluteLayout.LayoutBounds="200, 200"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand" 
-                    HeightRequest="200"
-                    WidthRequest="100" 
-                    Clicked="Btn_Clicked"
+    <ContentPage.Content>
+        <AbsoluteLayout >
+            <forms:AnimationView
+                 x:Name="City"
+                Animation="City.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="800"
+                WidthRequest="2000"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
                     />
-        </Grid>
-    </StackLayout>
+
+
+
+            <Image Source="LUNTIANPAINTBRUSH.png" 
+         HeightRequest="120"
+         WidthRequest="170"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="1,0">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer   DropCompleted="DragGestureRecognizer_DropCompletedWrong"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="DILAWPAINTBRUSH.png" 
+         HeightRequest="250"
+         WidthRequest="300"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds="0,1">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer  DropCompleted="DragGestureRecognizer_DropCompletedWrong" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="BUGHAWPAINTBRUSH.png" 
+         HeightRequest="250"
+         WidthRequest="250"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1,1">
+                <Image.GestureRecognizers >
+                    <DragGestureRecognizer  DropCompleted="DragGestureRecognizer_DropCompletedWrong"   />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="PULABRUSH.png" 
+                       x:Name="PULA"
+         HeightRequest="250"
+         WidthRequest="250"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".1,.2">
+                <Image.GestureRecognizers>
+                    <DragGestureRecognizer  CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting" DropCompleted="DragGestureRecognizer_DropCompleted"  />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+            <Image Source="LASOBW.png"
+         Opacity="0"
+         HeightRequest="300"
+         WidthRequest="500"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".5,.5" >
+                <Image.GestureRecognizers >
+                    <DropGestureRecognizer AllowDrop="True" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <forms:AnimationView
+                 x:Name="animationViewribbo3"
+                Opacity="0"
+                Animation="ribbon.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationViewribbon2"
+                Opacity="0"
+                Animation="ribbonBG.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                
+                />
+
+            <forms:AnimationView
+                 x:Name="animationViewribbon"
+                Animation="roseBG.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationViewribbon133"
+                
+                Animation="roseBG.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="500"
+                WidthRequest="500"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                
+                />
+
+            <Label x:Name="hiddenval" Text="0" TextColor="Red" FontSize="200">
+
+            </Label>
+
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
 
 </ContentPage>  

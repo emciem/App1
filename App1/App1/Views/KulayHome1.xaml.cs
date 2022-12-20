@@ -12,7 +12,7 @@ namespace App1.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class KulayHome1 : ContentPage
     {
-        protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(2500); await this.Navigation.PushAsync(new KulayHome2(), false); }
+        //protected async override void OnAppearing() { base.OnAppearing(); await Task.Delay(2500); await this.Navigation.PushAsync(new KulayHome2(), false); }
         public KulayHome1()
         {
             InitializeComponent();
@@ -25,6 +25,15 @@ namespace App1.Views
             DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
 
         }
+
+        private async void Btn_Back(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ItemDetailPage(), false);
+
+            DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
+
+        }
+
 
 
 

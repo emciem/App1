@@ -29,7 +29,7 @@ namespace App1.Views
 
         async void OnDrop(object sender, DropEventArgs e)
         {
-            await DisplayAlert("Correct", "Congratulations!", "OK");
+            DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
             await Navigation.PushAsync(new KulayHome10(), false);
 
         }

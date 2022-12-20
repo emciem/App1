@@ -21,6 +21,22 @@ namespace App1.Views
 
             DependencyService.Get<IAudio>().PlayAudioFile("PUSA.m4a");
         }
-        
+        async void OnDrop(object sender, DropEventArgs e)
+        {
+            if (e.Data.ToString() != "A")
+            {
+                await DisplayAlert("Correct", "Congratulations!", "OK"); 
+                DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
+                await Navigation.PushAsync(new Pusa2(), false);
+                //await labelAnimated.TranslateTo(-100, 0, 1000);
+            }
+            else
+            {
+                await DisplayAlert("Sorry", "Try Again", "OK");
+                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
+
+            }
+        }
     }
 }
+        

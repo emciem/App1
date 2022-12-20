@@ -20,6 +20,23 @@ namespace App1.Views
 
             DependencyService.Get<IAudio>().PlayAudioFile("TIMBA.m4a");
         }
-        
+
+        async void OnDrop(object sender, DropEventArgs e)
+        {
+            if (e.Data.ToString() != "A")
+            {
+                DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
+                DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
+                await Navigation.PushAsync(new Timba2(), false);
+                //await labelAnimated.TranslateTo(-100, 0, 1000);
+            }
+            else
+            {
+                await DisplayAlert("Sorry", "Try Again", "OK");
+                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
+
+            }
+        }
     }
 }
+        

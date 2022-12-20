@@ -25,7 +25,7 @@ namespace App1.Views
             {
 
                 DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-                await DisplayAlert("Correct", "Congratulations!", "OK");
+                DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
                 await Navigation.PushAsync(new Walis(), false);
             }
             else

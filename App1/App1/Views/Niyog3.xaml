@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Niyog3"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" BackgroundImageSource="A3rdPageBG.jpg">
+    <ContentPage.Content>
+        <AbsoluteLayout >
+
+
+
+            <forms:AnimationView
+                 x:Name="animationViewAnna"
+                Animation="duck.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.1,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="300"
+                WidthRequest="390"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+            <forms:AnimationView
+                 x:Name="animationViewBoy"
+                Animation="Boy.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".1,.9"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+
+
+            <forms:AnimationView
+                 x:Name="animationView9"
+                Animation="Small b.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.7,.16"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="150"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="LetterNsmall"
+                Animation="i.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.55,.16"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="150"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+
+
+
+
+            <forms:AnimationView
+                 x:Name="letterT"
+                Animation="A.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".56,.87"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="150"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"  
+                IsVisible="True"
+                 RepeatCount="2"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+            <forms:AnimationView
+                 x:Name="ijson"
+                Animation="t.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".66,.82"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="130"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                IsVisible="True"
+                 RepeatCount="2"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+            <forms:AnimationView
+                 x:Name="sjson"
+                Animation="A.json"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".76,.87"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="150"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                IsVisible="True"
+                 RepeatCount="2"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
+
+
+
+
+            <Label x:Name="lblBig" TextColor="DarkGreen" FontAttributes="Bold" FontSize="180"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" 
+                   AbsoluteLayout.LayoutBounds="1,-.05"
+                   Text="B">
+                <Label.GestureRecognizers >
+                    <DragGestureRecognizer CanDrag="True"  DropCompleted="DragGestureRecognizer_DropCompletedBig"/>
+                </Label.GestureRecognizers>
+
+            </Label>
+
+            <Label  x:Name="lblSmall" TextColor="Red" FontAttributes="Bold" FontSize="180"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" 
+                   AbsoluteLayout.LayoutBounds=".98,1"
+                    Text="b">
+                <Label.GestureRecognizers >
+                    <DragGestureRecognizer CanDrag="True" DropCompleted="DragGestureRecognizer_DropCompletedSmall"/>
+                </Label.GestureRecognizers>
+
+            </Label>
+
+
+            <Label x:Name="Big" TextColor="Gray" FontAttributes="Bold" FontSize="180"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" 
+                   AbsoluteLayout.LayoutBounds="0.42,-.05">
+                <Label.GestureRecognizers >
+                    <DropGestureRecognizer AllowDrop="True" />
+                </Label.GestureRecognizers>
+                B
+            </Label>
+
+            <Label x:Name="Small" TextColor="Black" FontAttributes="Bold" FontSize="180"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" 
+                   AbsoluteLayout.LayoutBounds="0.75,-.05">
+                <Label.GestureRecognizers >
+                </Label.GestureRecognizers>
+                e
+            </Label>
+
+            <Label x:Name="Smalla" TextColor="Gray" FontAttributes="Bold" FontSize="180"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" 
+                   AbsoluteLayout.LayoutBounds="0.45,.9">
+                <Label.GestureRecognizers >
+                    <DropGestureRecognizer AllowDrop="True" />
+                </Label.GestureRecognizers>
+                b
+            </Label>
+
+
+            <Label x:Name="DragVal" TextColor="Gray" FontAttributes="Bold" FontSize="180"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" 
+                   AbsoluteLayout.LayoutBounds="0.6,-.05"
+                   Text="1"
+                   Opacity="0">
+                <Label.GestureRecognizers >
+                    <DropGestureRecognizer AllowDrop="True" />
+                </Label.GestureRecognizers>
+            </Label>
+
+
+
+
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+
+</ContentPage>

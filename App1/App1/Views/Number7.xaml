@@ -3,13 +3,129 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.Number7"
              xmlns:vm="clr-namespace:App1.ViewModels"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             Title="{Binding Title}">
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}"
+             BackgroundColor="Maroon"
+             Shell.NavBarIsVisible="False">
 
-    <StackLayout>
-        <Grid  HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
-            <ffimageloading:SvgCachedImage Source="pito.gif" Aspect="Fill"/>
+
+    <ContentPage.Content>
+        <AbsoluteLayout >
+            <ffimageloading:SvgCachedImage Source="Stage.svg" 
+                                           Aspect="Fill"
+                                           FadeAnimationEnabled="True"
+                                           FadeAnimationDuration="1000"
+                                           WidthRequest="1200"
+                                           HeightRequest="800"
+                                           FadeAnimationForCachedImages="True"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional"
+                                           AbsoluteLayout.LayoutBounds=".5,.5"/>
+
+
+
+
+            <forms:AnimationView
+                 x:Name="animationView" 
+                Animation="J7.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView1"
+                Animation="J7.1.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".1,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="300"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView2"
+                Animation="J7.2.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9,.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="300"
+                WidthRequest="450"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView4"
+                Animation="J7.3.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".5,-.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+            <forms:AnimationView
+                 x:Name="animationView5"
+                Animation="Letteri.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".1,-.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView6"
+                Animation="S.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".2,-.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+            <forms:AnimationView
+                 x:Name="animationView7"
+                Animation="A.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".3,-.1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                    />
+
+
 
             <ImageButton Source="HomeLogoABC.png"
                     Opacity="0" 
@@ -18,9 +134,28 @@
                     VerticalOptions="CenterAndExpand" 
                     HeightRequest="200" 
                     WidthRequest="100" 
-                     Clicked="Btn_Clicked"
+                   Clicked="Btn_Clicked"  
                     />
-        </Grid>
-    </StackLayout>
+
+            <forms:AnimationView
+                x:Name="HomeBTN"
+                Animation="HomeBTN.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="100"
+                WidthRequest="100"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                Clicked="Btn_Back"
+                    />
+
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
 
 </ContentPage>  

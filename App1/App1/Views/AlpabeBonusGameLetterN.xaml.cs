@@ -19,20 +19,13 @@ namespace App1.Views
 			InitializeComponent ();
 		}
 
-        async void OnDrop(object sender, DropEventArgs e)
+        private async void Btn_Clicked(object sender, EventArgs e)
         {
-            if (e.Data.ToString() != "A")
-            {
-                DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new AlpabeBonusGameLetterN2(), false);
-            }
-            else
-            {
-                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
-                await DisplayAlert("Sorry", "Try Again", "OK");
+            await Navigation.PushAsync(new AlpabeBonusGameLetterN2(), false);
 
-            }
+            DependencyService.Get<IAudio>().StopAudioFile("BGMusicv2.mp3");
+
+            DependencyService.Get<IAudio>().PlayAudioFile("Quick.wav");
         }
     }
 }

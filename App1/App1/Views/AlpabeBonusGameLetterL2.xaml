@@ -1,103 +1,195 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="App1.Views.AlpabeBonusGameLetterL2"
              BackgroundColor="White">
+
     <ContentPage.Content>
         <AbsoluteLayout Margin="10">
-            <ImageButton 
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L51.png"
-         HeightRequest="120"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="1, 1">
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L52.png"
-         HeightRequest="120"
-         WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="210, 1">
 
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
+
+        <forms:AnimationView
+                 x:Name="bubble15" 
+                Animation="bubble.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0, .2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                IsVisible="False"
+                
+                    />
+        <forms:AnimationView
+                 x:Name="bubble14" 
+                Animation="bubble.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".3, .7"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                IsVisible="False"
+                    />
+        <forms:AnimationView
+                 x:Name="bubble13" 
+                Animation="bubble.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".6, .2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                IsVisible="False"
+                    />
+        <forms:AnimationView
+                 x:Name="bubble12" 
+                Animation="bubble.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9, .7"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                IsVisible="False"
+                    />
+        <forms:AnimationView
+                 x:Name="bubble1" 
+                Animation="bubble.json"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9, .2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                HeightRequest="200"
+                WidthRequest="150"
+                AnimationSource="AssetOrBundle"
+                RepeatCount="100"
+                RepeatMode="Restart"
+                AutoPlay="True"
+                IsVisible="False"
+                    />
+
+
+
+        <ImageButton 
          BackgroundColor="Transparent"
-         Source="L53.png"
+         x:Name="A1"
+         Source="A51.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="400, 1">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0, .2"
+                Clicked="Correct1">
+        </ImageButton>
 
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L54.png"
+
+        <ImageButton 
+                BackgroundColor="Transparent"
+                Clicked="Lose1"
+         x:Name="W1"
+         Source="A52.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="600, 1">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0, .7">
+        </ImageButton>
 
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L55.png"
+        <ImageButton 
+                BackgroundColor="Transparent"
+         x:Name="A2"
+         Source="A53.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="200, 150">
-
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L56.png"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".3, .7"
+                Clicked="Correct2">
+        </ImageButton>
+        <ImageButton 
+                BackgroundColor="Transparent"
+                Clicked="Lose2"
+         x:Name="W2"
+         Source="A54.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="450, 150">
-
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L57.png"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".3, .2">
+        </ImageButton>
+        <ImageButton 
+                BackgroundColor="Transparent"
+                Clicked="Lose3"
+         x:Name="W3"
+         Source="A55.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="600, 150">
-
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L58.png"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".6, .7">
+        </ImageButton>
+        <ImageButton 
+                BackgroundColor="Transparent"
+         x:Name="A3"
+         Source="A56.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="340, 150">
-
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
-         BackgroundColor="Transparent"
-         Source="L59.png"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".6, .2"
+                Clicked="Correct3">
+        </ImageButton>
+        <ImageButton 
+                BackgroundColor="Transparent"
+         x:Name="A4"
+         Source="A57.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="20, 150">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9, .7"
+                Clicked="Correct4">
+        </ImageButton>
 
-            </ImageButton>
-            <ImageButton
-         Clicked="Btn_Clicked"
+        <ImageButton 
+         x:Name="A5"
+         Clicked="Correct5"
+         BindingContext="test"
          BackgroundColor="Transparent"
-         Source="L57.png"
+         Source="A58.png"
          HeightRequest="100"
          WidthRequest="150"
-         AbsoluteLayout.LayoutBounds="20, 150">
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds=".9, .2">
+        </ImageButton>
 
-            </ImageButton>
 
-            <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->
-            <!--<ffimageloading:SvgCachedImage HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Source="NewBG.gif" HeightRequest="100" WidthRequest="100" />-->
-        </AbsoluteLayout>
+
+        <Label x:Name="lblVal"
+                ClassId="Eagle"
+               Text="0"
+                Opacity="1"
+         HeightRequest="100"
+         WidthRequest="150"
+         AbsoluteLayout.LayoutFlags="PositionProportional"
+         AbsoluteLayout.LayoutBounds=".5, .5">
+
+        </Label>
+
+
+        <!--<Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />-->
+        <!--<ffimageloading:SvgCachedImage HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Source="NewBG.gif" HeightRequest="100" WidthRequest="100" />-->
+    </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

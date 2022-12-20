@@ -19,22 +19,48 @@ namespace App1.Views
 
             DependencyService.Get<IAudio>().PlayAudioFile("ILAGAY NATIN ANG MALAKING LETRANG MA AT MALIIT NA LETRANG.m4a");
         }
-        async void OnDrop(object sender, DropEventArgs e)
+        private void DragGestureRecognizer_DropCompletedBig(object sender, DropCompletedEventArgs e)
         {
-            if (e.Data.ToString() != "A")
-            {
 
-                DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
-                await DisplayAlert("Correct", "Congratulations!", "OK");
-                await Navigation.PushAsync(new AlpabeBonusGameLetterM(), false);
-            }
-            else
-            {
 
-                DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
-                await DisplayAlert("Sorry", "Try Again", "OK");
-                
-            }
+            Big.Opacity = 0;
+            BubbleBig.IsVisible = true;
+            BubbleBig.RepeatCount = 1;
+            BubbleBig.RepeatMode = Lottie.Forms.RepeatMode.Restart;
+            BubbleBig.AutoPlay = true;
+            DragVal.Text = "1"; 
+            DependencyService.Get<IAudio>().PlayAudioFile("MAHUSAY.m4a");
+            Navigation.PushAsync(new Mannga3(), false);
         }
+
+        private void DragGestureRecognizer_DropCompletedSmall(object sender, DropCompletedEventArgs e)
+        {
+
+
+            Small.Opacity = 0;
+            BubbleSmall.IsVisible = true;
+            BubbleSmall.RepeatCount = 1;
+            BubbleSmall.RepeatMode = Lottie.Forms.RepeatMode.Restart;
+            BubbleSmall.AutoPlay = true;
+            DragVal.Text = "0";
+
+            //DependencyService.Get<IAudio>().PlayAudioFile("Complete.m4a");
+            //DisplayAlert("Correct", "Congratulations!", "OK");
+            //Navigation.PushAsync(new KulayHome4(), false);
+
+
+
+        }
+
+
+        private void DragGestureRecognizer_DropCompletedWrong(object sender, DropCompletedEventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("Lose.m4a");
+            DisplayAlert("Sorry", "Try Again", "OK");
+
+
+        }
+
+
     }
 }
